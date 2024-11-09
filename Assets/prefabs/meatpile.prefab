@@ -1,0 +1,100 @@
+{
+  "RootObject": {
+    "__guid": "4d404f28-523f-4f23-9066-94fabde42076",
+    "Flags": 0,
+    "Name": "meatpile",
+    "Tags": "nocollide,player,particles",
+    "Enabled": true,
+    "Children": [
+      {
+        "__guid": "ca510308-4485-4adc-88de-2df6c48c9589",
+        "Flags": 0,
+        "Name": "World",
+        "Position": "2,0,24.39578",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "c6873cc9-3fa6-4a2a-926e-3a30a2baec67",
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "PanelSize": "512,512",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.NameTag",
+            "__guid": "3d1f7fbb-c2de-4055-a4f4-95b6efbe377f",
+            "MyStringValue": "Hello World!"
+          }
+        ]
+      },
+      {
+        "__guid": "dc802918-df96-420a-b1ce-6e406c5cab64",
+        "Flags": 0,
+        "Name": "Model",
+        "Position": "0,0,-5.732667",
+        "Scale": "0.3850582,0.4486274,1.410535",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "2dc0665c-296e-4a00-810f-13482764d481",
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": "materials/textures.com/gore1/2k/tcom_gore_2k.vmat",
+            "Model": "models/props/dirt_pile/dirt_mound_b.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "0.84186,0.40331,0.40331,1"
+          }
+        ]
+      }
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [
+    "facepunch.dirt_mound_b#75382",
+    "titanovsky.gore_2k#54666"
+  ],
+  "__version": 1
+}

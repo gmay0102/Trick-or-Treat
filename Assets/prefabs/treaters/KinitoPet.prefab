@@ -1,0 +1,184 @@
+{
+  "RootObject": {
+    "__guid": "dbc95c5d-fd24-4a90-a887-2bd7f9a365e3",
+    "Flags": 0,
+    "Name": "kinitopet",
+    "Scale": "3.400001,3.400001,3.400001",
+    "Tags": "interact",
+    "NetworkMode": 1,
+    "Components": [
+      {
+        "__type": "KinitoPet",
+        "__guid": "19abc275-f50b-4875-bc7f-fbca4a15ce5e",
+        "Dialogue": {
+          "_type": "component",
+          "component_id": "3d699a7e-74f6-4dde-9015-9a0738b30d5b",
+          "go": "488878aa-c34c-4533-b9ce-1eae3b49b6eb",
+          "component_type": "DialogueBubble"
+        },
+        "IsGaisleInThere": "sound/kinitopet/isgaisleinhere.sound",
+        "IsNovaInThere": "sound/kinitopet/isnovainhere.sound",
+        "IWantToPlayTag": "sound/kinitopet/i want to play tag with him.sound",
+        "NavMeshAgent": {
+          "_type": "component",
+          "component_id": "96fe5ba9-b801-463c-89b0-a92a0df825ed",
+          "go": "dbc95c5d-fd24-4a90-a887-2bd7f9a365e3",
+          "component_type": "NavMeshAgent"
+        },
+        "soundbox": {
+          "_type": "component",
+          "component_id": "7e602f80-9fbd-407d-9988-ae423ad9bed1",
+          "go": "dbc95c5d-fd24-4a90-a887-2bd7f9a365e3",
+          "component_type": "SoundBoxComponent"
+        },
+        "StartRunning": "sound/kinitopet/startrunning.sound",
+        "ThisIsFun": "sound/kinitopet/somuchfun.sound",
+        "TreaterName": "KinitoPet",
+        "YayIGotHim": "sound/kinitopet/yayigothim.wav.sound",
+        "YouGotAway": "sound/kinitopet/yougotaway.wav.sound"
+      },
+      {
+        "__type": "Sandbox.NavMeshAgent",
+        "__guid": "96fe5ba9-b801-463c-89b0-a92a0df825ed",
+        "Acceleration": 120,
+        "Height": 43.90001,
+        "MaxSpeed": 150,
+        "Radius": 2,
+        "Separation": 0,
+        "UpdatePosition": true,
+        "UpdateRotation": false
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "7c6a842d-14f0-418f-89a4-d826e6c1897e",
+        "Center": "0,0,9.299994",
+        "IsTrigger": false,
+        "Scale": "6.399997,5.000002,17.9",
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
+      },
+      {
+        "__type": "Sandbox.SoundBoxComponent",
+        "__guid": "7e602f80-9fbd-407d-9988-ae423ad9bed1",
+        "DistanceAttenuation": false,
+        "DistanceAttenuationOverride": false,
+        "Force2d": false,
+        "MaxRepeatTime": 1,
+        "MinRepeatTime": 1,
+        "Occlusion": false,
+        "OcclusionOverride": false,
+        "OcclusionRadius": 32,
+        "Pitch": 1,
+        "PlayOnStart": false,
+        "ReflectionOverride": false,
+        "Reflections": false,
+        "Repeat": false,
+        "Scale": "50,50,50",
+        "SoundEvent": "sound/kinitopet/kinitohuntmusic.sound",
+        "SoundOverride": false,
+        "StopOnNew": false,
+        "TargetMixer": {
+          "Name": "unknown",
+          "Id": "00000000-0000-0000-0000-000000000000"
+        },
+        "Volume": 1
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "488878aa-c34c-4533-b9ce-1eae3b49b6eb",
+        "Flags": 0,
+        "Name": "Message",
+        "Position": "-0.000008975756,-0.0183644,21.35106",
+        "Rotation": "0,0,-0.7071067,0.7071068",
+        "Scale": "0.8000001,0.8000001,0.8000001",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "71684341-367c-452b-9919-f2fcf7f21c22",
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "PanelSize": "256,200",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.DialogueBubble",
+            "__guid": "3d699a7e-74f6-4dde-9015-9a0738b30d5b",
+            "__enabled": false,
+            "newstring": "sounds/kenney/ui/ui.navigate.deny.sound"
+          }
+        ]
+      },
+      {
+        "__guid": "ca4ce9ee-5303-4b53-97a1-7f50ae1d93c5",
+        "Flags": 0,
+        "Name": "Sprite",
+        "Position": "0,0,8.799999",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.SpriteRenderer",
+            "__guid": "00af9028-3efc-4dd9-989e-e59f1a6cfec9",
+            "Additive": false,
+            "CastShadows": false,
+            "Color": "0.26047,0.26047,0.26047,1",
+            "DepthFeather": 0,
+            "FlipHorizontal": false,
+            "FlipVertical": false,
+            "FogStrength": 1,
+            "Lighting": true,
+            "Opaque": true,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "Size": "18,18",
+            "Texture": "textures/trickortreaters/kinito.vtex"
+          }
+        ]
+      }
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

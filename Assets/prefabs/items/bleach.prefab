@@ -1,0 +1,79 @@
+{
+  "RootObject": {
+    "__guid": "8c89ae7d-5be4-4832-bf4c-6c78811881c6",
+    "Flags": 0,
+    "Name": "bleach",
+    "Scale": "0.6,0.6,0.6",
+    "Tags": "nocollide",
+    "Enabled": true,
+    "NetworkMode": 1,
+    "OwnerTransfer": 0,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "09bdcebd-bbce-4572-8d54-221a9b1e3111",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": false,
+        "Model": "models/spray2.vmdl",
+        "StartAsleep": false,
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "SelfDestructComponent",
+        "__guid": "26a27b5c-fe7c-440b-b324-6f6f62d1db6c",
+        "Seconds": 45
+      },
+      {
+        "__type": "ItemComponent",
+        "__guid": "3eacacf4-6861-477e-9eb9-37f6e0a2c645",
+        "Attack1Tooltip": "",
+        "Attack2Tooltip": "Give",
+        "DestroyOnDrop": true,
+        "DestroyOnPickup": true,
+        "DropTooltip": "Drop",
+        "ImageUrl": "UI/candyicons/bleach.png",
+        "ItemName": "Bleach",
+        "PickUpSound": "sound/ui/pickup.sound",
+        "WorldModel": {
+          "_type": "gameobject",
+          "prefab": "prefabs/items/bleach.prefab"
+        }
+      }
+    ],
+    "Children": [],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [
+    "jodiscontent.spray2#24115"
+  ],
+  "__version": 1
+}

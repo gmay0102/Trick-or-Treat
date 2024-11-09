@@ -1,0 +1,25 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+@if (!IsProxy)
+{
+<root>
+    <div class="spectator-message">
+        <p class="dead-text">YOU'RE DEAD!</p>
+        <p class="enjoy-text">enjoy the show</p>
+    </div>
+</root>
+}
+
+@code
+{
+
+	[Property, TextArea] public string MyStringValue { get; set; } = "Hello World!";
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( MyStringValue );
+}

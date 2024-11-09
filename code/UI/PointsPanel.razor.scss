@@ -1,0 +1,37 @@
+.panel {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 10px;
+	background-color: #3330;
+	border-radius: 4px;
+	font-family: 'Pixelify Sans';
+}
+
+.treat, .trick {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 48%;
+	padding: 5px;
+	color: #fff;
+	border-radius: 8px;
+}
+
+.treat {
+	background-color: #2f7d49; /* Green for treat */
+}
+
+.trick {
+	background-color: #5f1f1f; /* Red for trick */
+}
+
+.label {
+	font-size: 25px;
+}
+
+.value {
+	font-size: 80px;
+	font-weight: bold;
+}

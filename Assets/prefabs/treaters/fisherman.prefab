@@ -1,0 +1,140 @@
+{
+  "RootObject": {
+    "__guid": "f7c68e32-7def-4292-9478-e0c373653801",
+    "Flags": 0,
+    "Name": "fisherman",
+    "Scale": "3.400001,3.400001,3.400001",
+    "Tags": "interact",
+    "Enabled": true,
+    "NetworkMode": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.SpriteRenderer",
+        "__guid": "acee76bc-683f-4602-8aa1-4690b50c4201",
+        "Additive": false,
+        "CastShadows": false,
+        "Color": "0.26047,0.26047,0.26047,1",
+        "DepthFeather": 0,
+        "FlipHorizontal": false,
+        "FlipVertical": false,
+        "FogStrength": 1,
+        "Lighting": true,
+        "Opaque": true,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "Size": "18,18",
+        "Texture": "textures/trickortreaters/fisherman.vtex"
+      },
+      {
+        "__type": "TrickOrTreater",
+        "__guid": "1f5a1123-6d3d-4545-bace-e3a4cff90bd8",
+        "BadResponse": "i don\u0027t want that!",
+        "BestCandies": [
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/gummyworms.prefab"
+          }
+        ],
+        "BestResponse": "this is the catch of the season!",
+        "Denied": "sounds/kenney/ui/ui.navigate.deny.sound",
+        "Dialogue": {
+          "_type": "component",
+          "component_id": "2e28821c-ed8a-4142-9d8b-4f31b2ce067e",
+          "go": "d175756e-e471-4f97-9d66-db111c799c41",
+          "component_type": "DialogueBubble"
+        },
+        "lethal": false,
+        "OkCandies": [
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/meat.prefab"
+          }
+        ],
+        "OkResponse": "gross! but this might work!",
+        "Request": "i need more bait for my tackle box",
+        "scary": false,
+        "TreaterName": "Fisher"
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "cb59753d-62b0-4a9c-8555-62cd9987ada3",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "12.3,8.300007,17.9",
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "d175756e-e471-4f97-9d66-db111c799c41",
+        "Flags": 0,
+        "Name": "Message",
+        "Position": "0.000004487878,-3.563025,12.76094",
+        "Rotation": "0,0,-0.7071067,0.7071068",
+        "Scale": "0.8000001,0.8000001,0.8000001",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "e9e95bc2-f713-40af-8c00-bd5e94d3813c",
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "PanelSize": "256,200",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.DialogueBubble",
+            "__guid": "2e28821c-ed8a-4142-9d8b-4f31b2ce067e",
+            "__enabled": false,
+            "newstring": "sounds/kenney/ui/ui.navigate.deny.sound",
+            "speak": "sound/ui/dialoguebox/kidvoice.sound"
+          }
+        ]
+      }
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

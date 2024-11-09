@@ -1,0 +1,55 @@
+{
+  "RootObject": {
+    "__guid": "4d404f28-523f-4f23-9066-94fabde42076",
+    "Flags": 0,
+    "Name": "spectator",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "SpectatorController",
+        "__guid": "701c4075-8c39-4335-a247-3fb3790ccf69",
+        "CustomFOV": 90,
+        "MoveSpeed": 250,
+        "UseCustomFOV": true
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "b9602459-c84a-46ca-ab0d-fd60df608095",
+        "Flags": 0,
+        "Name": "Spectator UI",
+        "Position": "-18.34495,-155.1505,-21.19755",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ScreenPanel",
+            "__guid": "5df723b7-0be3-4468-a039-532f2b9c5364",
+            "AutoScreenScale": true,
+            "Opacity": 1,
+            "Scale": 1,
+            "ScaleStrategy": "ConsistentHeight",
+            "ZIndex": 100
+          },
+          {
+            "__type": "Sandbox.SpectatorMessage",
+            "__guid": "bc0a2ed7-330b-45c0-ba73-a872c72110bc",
+            "MyStringValue": "Hello World!"
+          },
+          {
+            "__type": "SelfDestructComponent",
+            "__guid": "cf7f2114-7ca4-4805-88f0-31775ec140c3",
+            "Seconds": 10
+          }
+        ]
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

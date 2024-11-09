@@ -1,0 +1,67 @@
+@using Sandbox
+@using Sandbox.UI
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+    @if (treater != null && !string.IsNullOrEmpty(treater.TreaterName))
+        <div class="name">@treater.TreaterName</div>
+
+        <text class="text">@_message</text>   
+</root>
+
+@code {
+
+    public ITrickOrTreater treater { get; set; }
+    [Property] SoundEvent speak { get; set; }
+    [Property] SoundEvent newstring { get; set; }
+
+    private float MessageSpeed => 0.06f; // Speed of the typing effect
+    [Sync] private string _message { get; set; } = ""; // Displayed message
+    [Sync] private TimeUntil _timeUntilNextLetter { get; set; };
+
+    [Sync] public string CurrentRequestString { get; set; } = "";
+
+    protected override void OnEnabled()
+    {
+        // Find the ITrickOrTreater component in the parent
+        treater = Components.GetInParent<ITrickOrTreater>();
+    }
+
+    protected override void OnFixedUpdate()
+    {
+        // Check if it's time to add the next letter and if there are letters left in CurrentRequestString
+        if (_timeUntilNextLetter && !string.IsNullOrEmpty(CurrentRequestString))
+        {
+            _timeUntilNextLetter = MessageSpeed; // Reset timer
+
+            // Only access the first character if CurrentRequestString is not empty
+            if (CurrentRequestString.Length > 0)
+            {
+                if (speak != null)
+                    Sound.Play(speak, WorldPosition);
+
+                _message += CurrentRequestString[0]; // Add the first letter to the displayed message
+                CurrentRequestString = CurrentRequestString.Substring(1); // Remove the added letter
+            }
+
+            // Check if we have finished displaying the message
+            if (string.IsNullOrEmpty(CurrentRequestString))
+                _timeUntilNextLetter = 0; // Stop the timer
+        }
+    }
+
+    public void ClearText()
+    {
+        _message = string.Empty;
+        CurrentRequestString = string.Empty;
+    }
+
+    public void Speak(string response)
+    {
+        Sound.Play(newstring, WorldPosition);
+        CurrentRequestString = response;
+    }
+
+    protected override int BuildHash() => System.HashCode.Combine(CurrentRequestString, _message, treater);
+}

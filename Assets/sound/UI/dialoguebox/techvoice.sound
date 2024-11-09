@@ -1,0 +1,19 @@
+{
+  "UI": false,
+  "Volume": "0.5",
+  "Pitch": "2",
+  "Decibels": 70,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sound/ui/dialoguebox/sourcefiles/tech1.vsnd",
+    "sound/ui/dialoguebox/sourcefiles/tech2.vsnd",
+    "sound/ui/dialoguebox/sourcefiles/tech3.vsnd"
+  ],
+  "Occlusion": true,
+  "AirAbsorption": true,
+  "Transmission": true,
+  "OcclusionRadius": 64,
+  "DistanceAttenuation": true,
+  "__references": [],
+  "__version": 0
+}

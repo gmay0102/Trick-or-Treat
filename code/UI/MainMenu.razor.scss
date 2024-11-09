@@ -1,0 +1,47 @@
+.main-menu {
+	flex-direction: column;
+	//justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	pointer-events: all;
+	position: absolute;
+	left: 500px;
+	top: 320px;
+	margin: 10px;
+
+	.title {
+		font-family: Poppins;
+		font-size: 96px;
+		font-weight: bolder;
+		color: darkorange;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		margin-bottom: 50px;
+	}
+
+	.button-container {
+		display: flex;
+		justify-content: flex-end;
+
+		.start-button {
+			font-family: Poppins;
+			font-size: 32px;
+			font-weight: bold;
+			color: white;
+			padding: 10px 30px;
+			border: 2px solid white;
+			border-radius: 5px;
+			background-color: rgba(255, 255, 255, 0.1);
+			cursor: pointer;
+			transition: background-color 0.2s ease;
+
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.3);
+			}
+
+			&:active {
+				background-color: rgba(255, 255, 255, 0.5);
+			}
+		}
+	}
+}

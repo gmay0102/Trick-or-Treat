@@ -1,0 +1,103 @@
+{
+  "RootObject": {
+    "__guid": "a36942ff-ea03-43b5-b840-c481c609131b",
+    "Flags": 0,
+    "Name": "candycorn",
+    "Scale": "0.06225207,0.06543694,0.07640206",
+    "Tags": "nocollide",
+    "Enabled": true,
+    "NetworkMode": 1,
+    "OwnerTransfer": 0,
+    "Components": [
+      {
+        "__type": "SelfDestructComponent",
+        "__guid": "dceae512-9731-45e4-bac1-9f55945ffe22",
+        "Seconds": 45
+      },
+      {
+        "__type": "ItemComponent",
+        "__guid": "37050122-e226-4d6a-88b7-6528147073aa",
+        "Attack1Tooltip": "",
+        "Attack2Tooltip": "Give",
+        "DestroyOnDrop": true,
+        "DestroyOnPickup": true,
+        "DropTooltip": "Drop",
+        "ImageUrl": "UI/candyicons/candycorn.png",
+        "ItemName": "Candy Corn",
+        "PickUpSound": "sound/ui/pickup.sound",
+        "WorldModel": {
+          "_type": "gameobject",
+          "prefab": "prefabs/items/candycorn.prefab"
+        }
+      },
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "7b1b8d13-1211-4c3c-9203-9b5d0e1a1117",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassCenterOverride": "0,0,0",
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "OverrideMassCenter": false,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      },
+      {
+        "__type": "Sandbox.ModelCollider",
+        "__guid": "359927b2-60ee-491b-90ec-8dd5e6354bc9",
+        "IsTrigger": false,
+        "Model": "models/cone.vmdl",
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
+      },
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "752666fc-6b15-4809-9b57-6144865ea8e1",
+        "BodyGroups": 18446744073709551615,
+        "Model": "models/cone.vmdl",
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,0.23333,0,1"
+      }
+    ],
+    "Children": [],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

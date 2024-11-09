@@ -1,0 +1,22 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<div class="panel">
+    <div class="treat">
+        <span class="label">TREAT</span>
+        <span class="value">@sm.TreatPoints</span>
+    </div>
+    <div class="trick">
+        <span class="label">TRICK</span>
+        <span class="value">@sm.TrickPoints</span>
+    </div>
+</div>
+
+@code
+{
+    [Property] ScareMaster sm { get; set; }
+
+    protected override int BuildHash() => System.HashCode.Combine(sm.TrickPoints, sm.TreatPoints);
+}

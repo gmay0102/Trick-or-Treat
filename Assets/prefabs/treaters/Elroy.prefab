@@ -1,0 +1,145 @@
+{
+  "RootObject": {
+    "__guid": "b9ad1d37-afb6-49f6-8486-9de80b26ff9b",
+    "Flags": 0,
+    "Name": "elroy",
+    "Scale": "3.400001,3.400001,3.400001",
+    "Tags": "interact",
+    "NetworkMode": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.SpriteRenderer",
+        "__guid": "a2ac7ec5-22ee-479a-adc5-3d8ab5062290",
+        "Additive": false,
+        "CastShadows": false,
+        "Color": "0.26047,0.26047,0.26047,1",
+        "DepthFeather": 0,
+        "FlipHorizontal": false,
+        "FlipVertical": false,
+        "FogStrength": 1,
+        "Lighting": true,
+        "Opaque": true,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "Size": "18,18",
+        "Texture": "textures/trickortreaters/elroy.vtex"
+      },
+      {
+        "__type": "TrickOrTreater",
+        "__guid": "a3bd812b-ff7f-431f-a45d-3c09ab494ce7",
+        "BadResponse": "dag nabbit",
+        "BestCandies": [
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/snickers.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/gummyworms.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/almondjoy.prefab"
+          }
+        ],
+        "BestResponse": "hoo boy, yer my favorite deputy",
+        "Denied": "sounds/kenney/ui/ui.navigate.deny.sound",
+        "Dialogue": {
+          "_type": "component",
+          "component_id": "36525af3-7b4c-4270-8770-c039145fc80b",
+          "go": "af653630-d7cb-478b-8f34-b40aba728a02",
+          "component_type": "DialogueBubble"
+        },
+        "OkCandies": [
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/reeses.prefab"
+          }
+        ],
+        "OkResponse": "at\u0027ll do ranger",
+        "Request": "howdy partner, gimme somethin chewy",
+        "TreaterName": "Elroy"
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "bf98000a-6081-465d-990e-dc6caa54c134",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "12.3,8.300007,17.9",
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "af653630-d7cb-478b-8f34-b40aba728a02",
+        "Flags": 0,
+        "Name": "Message",
+        "Position": "0,-3.563005,13.91401",
+        "Rotation": "0,0,-0.7071067,0.7071068",
+        "Scale": "0.8000001,0.8000001,0.8000001",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "b999fce8-683e-4393-afc4-14c5afbfd7f3",
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "PanelSize": "256,200",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.DialogueBubble",
+            "__guid": "36525af3-7b4c-4270-8770-c039145fc80b",
+            "__enabled": false,
+            "newstring": "sounds/kenney/ui/ui.navigate.deny.sound",
+            "speak": "sound/ui/dialoguebox/kidvoice.sound"
+          }
+        ]
+      }
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

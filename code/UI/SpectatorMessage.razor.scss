@@ -1,0 +1,36 @@
+.spectator-message {
+	position: absolute; /* Use absolute positioning */
+	top: 5%; /* Position from the top of the screen */
+	left: 15%; /* Center horizontally */
+	transform: translate(-50%, 0); /* Center the container horizontally */
+	display: flex; /* Use flexbox for layout */
+	flex-direction: column; /* Stack elements vertically */
+	align-items: center; /* Center elements horizontally */
+	text-align: center; /* Center text within each element */
+	font-family: "Pixelify Sans";
+	font-weight: bolder;
+	/* Add a transparent dark background with rounded corners */
+	background-color: rgba(0, 0, 0, 0.6); /* 60% opacity black background */
+	border-radius: 12px; /* Rounded corners */
+	padding: 15px; /* Padding inside the box */
+	max-width: 80%; /* Set max width to prevent it from stretching too wide */
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add a slight shadow effect */
+
+	.dead-text {
+		color: red;
+		font-size: 32px;
+		font-weight: bold;
+		text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black; /* Creates a border effect */
+	}
+
+	.enjoy-text {
+		color: white;
+		font-size: 24px;
+		margin-top: 10px; /* Adds a small space below the main text */
+		text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black; /* Creates a border effect */
+	}
+
+	&.hidden {
+		display: none;
+	}
+}

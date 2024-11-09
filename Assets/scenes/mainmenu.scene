@@ -1,0 +1,979 @@
+{
+  "__guid": "9d29524f-136d-401a-b641-792f9dd21974",
+  "GameObjects": [
+    {
+      "__guid": "bad5bea2-b4b6-4e4a-b01d-e384d4e03cbb",
+      "Flags": 0,
+      "Name": "Radio",
+      "Position": "-174.834,172.8855,93.19096",
+      "Rotation": "0,0,-0.9914448,0.1305263",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "1276fa36-ea88-4791-9870-63479062a6f1",
+          "IsTrigger": false,
+          "Model": "content/models/radio/radio.vmdl",
+          "Static": false,
+          "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "1a924948-cf50-408a-a367-3899a5a51001",
+          "BodyGroups": 18446744073709551615,
+          "CreateBoneObjects": false,
+          "Model": "content/models/radio/radio.vmdl",
+          "Morphs": {},
+          "Parameters": {
+            "bools": {},
+            "ints": {},
+            "floats": {},
+            "vectors": {},
+            "rotations": {}
+          },
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.SoundPointComponent",
+          "__guid": "c15256ff-6915-4814-a651-f156b7b370b3",
+          "DistanceAttenuation": false,
+          "DistanceAttenuationOverride": false,
+          "Force2d": false,
+          "MaxRepeatTime": 1,
+          "MinRepeatTime": 1,
+          "Occlusion": false,
+          "OcclusionOverride": false,
+          "OcclusionRadius": 32,
+          "Pitch": 1,
+          "PlayOnStart": true,
+          "ReflectionOverride": false,
+          "Reflections": false,
+          "Repeat": true,
+          "SoundEvent": "sound/scapescared.sound",
+          "SoundOverride": true,
+          "StopOnNew": false,
+          "TargetMixer": {
+            "Name": "unknown",
+            "Id": "00000000-0000-0000-0000-000000000000"
+          },
+          "Volume": 1
+        }
+      ]
+    },
+    {
+      "__guid": "047e0dbb-c9bf-4430-b091-cbb68ac1c2b3",
+      "Flags": 0,
+      "Name": "NetworkHelper",
+      "Position": "-149.7822,109.626,89.51813",
+      "Rotation": "0,0,-0.5927173,0.8054106",
+      "Enabled": true,
+      "NetworkMode": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.NetworkHelper",
+          "__guid": "abb54477-11b8-444b-8674-1956c69c16d6",
+          "PlayerPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/doll.prefab"
+          },
+          "SpawnPoints": [
+            {
+              "_type": "gameobject",
+              "go": "d4b85670-4751-4063-ba7a-3bad321fa9f7"
+            },
+            {
+              "_type": "gameobject",
+              "go": "e8c0daa8-c023-4e40-a8f1-a2066fbd48d5"
+            },
+            {
+              "_type": "gameobject",
+              "go": "89908c8c-f296-42c5-a215-21bba4f39f2d"
+            },
+            {
+              "_type": "gameobject",
+              "go": "53052a56-b2f1-4774-a92e-43f716e59574"
+            },
+            {
+              "_type": "gameobject",
+              "go": "f99272ab-d62e-4def-a84e-b7ee49f2fa77"
+            },
+            {
+              "_type": "gameobject",
+              "go": "7543d042-093a-4244-bfc7-77ec29c3b3a2"
+            },
+            {
+              "_type": "gameobject",
+              "go": "89635131-ed3b-4c15-838e-1e5fc77d45a2"
+            },
+            {
+              "_type": "gameobject",
+              "go": "cc77ac6d-1669-4460-a0ba-cd14c7f8453f"
+            },
+            {
+              "_type": "gameobject",
+              "go": "f891d9de-4c21-40af-9949-0d4baa740df7"
+            },
+            {
+              "_type": "gameobject",
+              "go": "06f4e67d-3d91-40a2-84e8-1879a4471225"
+            },
+            {
+              "_type": "gameobject",
+              "go": "d7ced9ee-b530-4f02-8915-22ec16772f22"
+            },
+            {
+              "_type": "gameobject",
+              "go": "ec85f6e5-e0fd-47d0-8970-ab8795d21e7e"
+            },
+            {
+              "_type": "gameobject",
+              "go": "b867d742-77c2-49b3-9a5b-0427e1e50ac4"
+            },
+            {
+              "_type": "gameobject",
+              "go": "83d545f6-dc87-4fc3-b4c3-fec1426b64f3"
+            }
+          ],
+          "StartServer": true
+        }
+      ]
+    },
+    {
+      "__guid": "df2d58b3-5d85-4111-a5a4-f0b8ee4c670d",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "-166.4397,-388.5031,128.9228",
+      "Rotation": "-0.01006006,-0.05437575,0.6234783,0.7798827",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "c6637eb1-156c-4a03-9009-87acd234b6e2",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 33.54,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        },
+        {
+          "__type": "Sandbox.AmbientOcclusion",
+          "__guid": "8789b337-b5dd-4ff6-9607-eac732e498a1",
+          "FalloffDistance": 1,
+          "Intensity": 16,
+          "Quality": "High",
+          "Radius": 32
+        },
+        {
+          "__type": "Sandbox.Bloom",
+          "__guid": "fb0469a0-27a7-4561-b253-67600c348f88",
+          "BloomColor": {
+            "color": [
+              {
+                "c": "1,1,1,1"
+              },
+              {
+                "t": 1,
+                "c": "1,1,1,1"
+              }
+            ],
+            "alpha": []
+          },
+          "BloomCurve": [
+            {
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "Mode": "Additive",
+          "Strength": 1,
+          "Threshold": 0.5,
+          "ThresholdWidth": 0
+        },
+        {
+          "__type": "Sandbox.DepthOfField",
+          "__guid": "2f2a0a20-cfb0-4870-8868-b839696285ac",
+          "BackBlur": true,
+          "BlurSize": 100,
+          "FocalDistance": 748.82,
+          "FrontBlur": false
+        },
+        {
+          "__type": "Sandbox.FilmGrain",
+          "__guid": "4b4e54bc-4d80-4870-85c7-e03a0d6b52e7",
+          "Intensity": 0.02,
+          "Response": 0.30000037
+        },
+        {
+          "__type": "Sandbox.Vignette",
+          "__guid": "aebb720d-c00f-4992-a6d4-c32c465a411a",
+          "Center": "0.5,0.5",
+          "Color": "0,0,0,1",
+          "Intensity": 0.63,
+          "Roundness": 0.17,
+          "Smoothness": 1
+        }
+      ]
+    },
+    {
+      "__guid": "bb03ce0d-a876-4ee8-b146-0b14be028990",
+      "Flags": 0,
+      "Name": "Front Door",
+      "Position": "72.86983,140.5692,85.94521",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Tags": "highlight,interact,door",
+      "Enabled": true,
+      "NetworkMode": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "c408c928-f94d-453b-8a07-d9949d47abcb",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/architecture/door/door_wood.vmdl",
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "25600715-87a8-464d-be67-cb9370586a98",
+          "IsTrigger": false,
+          "Model": "models/architecture/door/door_wood.vmdl",
+          "Static": false,
+          "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "HalloweenDoor",
+          "__guid": "1e146964-9223-48eb-bbcb-cfa841937281",
+          "AnimationCurve": [
+            {},
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "CloseFinishedSound": "sound/door/woodstop.sound",
+          "CloseSound": "sound/door/woodopen.sound",
+          "OpenFinishedSound": "sound/door/openthud.sound",
+          "OpenSound": "sound/door/woodopen.sound",
+          "OpenTime": 1
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "a1c390fe-1cb7-4c9a-9d06-06d75e45e25e",
+          "Flags": 0,
+          "Name": "Soundpoint",
+          "Position": "-3.507183,21.65965,57.69305",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SoundPointComponent",
+              "__guid": "57b33ae5-f8c2-4cfb-99b0-18a0ea18f917",
+              "DistanceAttenuation": false,
+              "DistanceAttenuationOverride": false,
+              "Force2d": false,
+              "MaxRepeatTime": 1,
+              "MinRepeatTime": 1,
+              "Occlusion": false,
+              "OcclusionOverride": false,
+              "OcclusionRadius": 32,
+              "Pitch": 1,
+              "PlayOnStart": true,
+              "ReflectionOverride": false,
+              "Reflections": false,
+              "Repeat": false,
+              "SoundOverride": false,
+              "StopOnNew": false,
+              "TargetMixer": {
+                "Name": "unknown",
+                "Id": "00000000-0000-0000-0000-000000000000"
+              },
+              "Volume": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "5caef33a-7941-4050-80f7-f64062e734c7",
+      "Flags": 0,
+      "Name": "Map",
+      "Position": "-217.0814,26.10411,22.43291",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "9e969287-f293-438e-bca7-35b02dc1d039",
+          "__version": 1,
+          "EnableCollision": true,
+          "MapName": "maps/mainmenu.vmap",
+          "NoOrigin": false,
+          "OnMapLoaded": null,
+          "OnMapUnloaded": null,
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "e94d2b5f-2482-479e-a761-eeeaa95d0bc2",
+      "Flags": 0,
+      "Name": "Screen",
+      "Position": "-153.4418,233.9911,17.69576",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "82c1ff30-96a4-4b93-9c8a-a184d17811c6",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ScaleStrategy": "ConsistentHeight",
+          "ZIndex": 100
+        },
+        {
+          "__type": "Chat",
+          "__guid": "5bef73c5-9bf2-4a42-80d8-323af8c9916b"
+        },
+        {
+          "__type": "Sandbox.MainMenu",
+          "__guid": "861e272f-b9fb-40c3-9569-30291cae57af",
+          "HouseScene": "scenes/house.scene",
+          "MyStringValue": "Hello World!",
+          "RollOver": "sounds/kenney/ui/ui.button.over.sound"
+        }
+      ]
+    },
+    {
+      "__guid": "003e784f-8ee7-4ad4-a7ac-e46b1cbc77e4",
+      "Flags": 0,
+      "Name": "Decoration",
+      "Position": "-86.9422,-187.6771,204.4225",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "eb63a9e4-3f5e-4af4-9b7b-a0d0f301b1de",
+          "Flags": 0,
+          "Name": "eveningambience",
+          "Position": "14.74887,-61.77771,24.07869",
+          "Rotation": "-0.03867939,-0.03090501,0.780293,-0.6234514",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SoundPointComponent",
+              "__guid": "f4db6ac8-df13-498f-8864-de7f690eaf0d",
+              "DistanceAttenuation": false,
+              "DistanceAttenuationOverride": false,
+              "Force2d": true,
+              "MaxRepeatTime": 1,
+              "MinRepeatTime": 1,
+              "Occlusion": false,
+              "OcclusionOverride": false,
+              "OcclusionRadius": 32,
+              "Pitch": 1,
+              "PlayOnStart": true,
+              "ReflectionOverride": false,
+              "Reflections": false,
+              "Repeat": true,
+              "SoundEvent": "sound/eveningambience.sound",
+              "SoundOverride": false,
+              "StopOnNew": false,
+              "TargetMixer": {
+                "Name": "unknown",
+                "Id": "00000000-0000-0000-0000-000000000000"
+              },
+              "Volume": 1
+            }
+          ]
+        },
+        {
+          "__guid": "d849e8a9-dbe2-43a8-902b-d4e8051aba2b",
+          "Flags": 0,
+          "Name": "beech_bush_small (7)",
+          "Position": "146.036,140.1012,-147.9177",
+          "Rotation": "-0.1286228,-0.03115202,0.963352,-0.233321",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "f1dfdc42-1689-4b89-89b4-a2343ee39234",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/shrubs/beech/beech_bush_small.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "39c07fae-1b18-4282-b1f0-cd3712b59efe",
+          "Flags": 0,
+          "Name": "beech_bush_small (4)",
+          "Position": "-244.5228,150.4557,-147.9177",
+          "Rotation": "-0.1286228,-0.03115202,0.963352,-0.233321",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "796a5139-181f-40df-8e8f-ae78d13bb1e0",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/shrubs/beech/beech_bush_small.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "21a60fa6-8407-4822-b56a-df364eca225b",
+          "Flags": 0,
+          "Name": "beech_bush_small (2)",
+          "Position": "-69.19408,150.4557,-147.9177",
+          "Rotation": "-0.1286228,-0.03115202,0.963352,-0.233321",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "373eba10-f8aa-4265-8e2c-ea5501246119",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/shrubs/beech/beech_bush_small.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "46c41f6b-691a-495e-920f-9b37241450c8",
+          "Flags": 0,
+          "Name": "beech_bush_small (6)",
+          "Position": "200.9249,148.4525,-147.9177",
+          "Rotation": "-0.06892225,-0.1129778,0.51621,-0.8461756",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "53520cc3-d3af-4c5d-a851-2849185f2565",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/shrubs/beech/beech_bush_small.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "ac336597-2b8f-4e82-bd50-6ff38900c9b9",
+          "Flags": 0,
+          "Name": "beech_bush_small (3)",
+          "Position": "-189.6339,158.8071,-147.9177",
+          "Rotation": "-0.06892225,-0.1129778,0.51621,-0.8461756",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "e8ef2099-2997-47fc-8096-44aec1f9a3ca",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/shrubs/beech/beech_bush_small.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "55c196ae-1024-4858-87c1-55da3f6461e8",
+          "Flags": 0,
+          "Name": "beech_bush_small (1)",
+          "Position": "63.6806,158.8071,-147.9177",
+          "Rotation": "-0.06892225,-0.1129778,0.51621,-0.8461756",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "c756edea-6440-4012-9ca2-76a8601aabc3",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/shrubs/beech/beech_bush_small.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "ca63ee0d-bc6f-45a5-9a6f-bfcb2142da47",
+          "Flags": 0,
+          "Name": "beech_bush_small (8)",
+          "Position": "273.4262,147.5712,-147.9177",
+          "Rotation": "-0.1069106,-0.07800251,0.8007331,-0.5842193",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "e57756e6-9f0f-4578-a766-b57217e7e0ba",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/shrubs/beech/beech_bush_small.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "80442681-2f7d-4d6b-89c7-c27f2a089e27",
+          "Flags": 0,
+          "Name": "beech_bush_small (5)",
+          "Position": "-117.1326,157.9257,-147.9177",
+          "Rotation": "-0.1069106,-0.07800251,0.8007331,-0.5842193",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "d9b8906f-6e7e-41bb-a67f-fb722d47f0c2",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/shrubs/beech/beech_bush_small.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "93824c02-137d-4730-b822-bb72cea4ca25",
+          "Flags": 0,
+          "Name": "building4out (1)",
+          "Position": "-903.655,4071.239,-280.1593",
+          "Rotation": "0.7028414,0.07754932,0.7028415,-0.07754935",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "e195cb7e-35b3-4adc-a784-ae432c96e4b2",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/building4out.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "a8ef4707-d029-4ece-927e-9cc55fbe0f20",
+          "Flags": 0,
+          "Name": "building4out",
+          "Position": "740.3185,2226.536,-280.1597",
+          "Rotation": "0.6790176,-0.1973195,0.6790177,0.1973195",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "71d8c2e5-9364-4974-8850-65a170b9cb1d",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/building4out.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "bc8c6650-a526-44a8-8532-522d6b1e709e",
+          "Flags": 0,
+          "Name": "tree_oak_big_a (1)",
+          "Position": "1392.319,1351.781,-191.7101",
+          "Rotation": "0.01922262,0.02303117,-0.9966553,0.07601508",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "04d95de5-8085-4051-a914-0283cf467898",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/trees/oak/tree_oak_big_a.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "dff040d6-9fd0-4066-9197-4be812c20d8e",
+          "Flags": 0,
+          "Name": "tree_oak_big_a",
+          "Position": "-10.42365,1351.781,-191.7101",
+          "Rotation": "0.01922262,0.02303117,-0.9966553,0.07601508",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "f88efbfa-3447-44fe-bc25-da00b3530b6b",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/sbox_props/trees/oak/tree_oak_big_a.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "a7ba6747-8f64-4cc2-bc7c-408bf19bf42c",
+          "Flags": 0,
+          "Name": "Box",
+          "Position": "69.52725,460.9094,-53.98956",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.MeshComponent",
+              "__guid": "a7a61a2b-3860-4784-ac01-e6a39d380092",
+              "Collision": "Mesh",
+              "Color": "1,1,1,1",
+              "HideInGame": false,
+              "IsTrigger": false,
+              "Mesh": {
+                "Topology": "H4sIAAAAAAAACl2Qiw6CUAxDh1flgg/wAfr/X2pP0iWLJA25W9t16xHxFc4C30E4\u002Bt2FWbgKd2Ew4NTvIZxcb9ZH4b5db\u002Bb9z/oUzVh8m7lPc9FOzjRYQ8ZXyXxxXvrw4e72wvtWdoEPdzMXj8We9OHDXcvO7EqdN396eKaeLHjkLciePeYxi4z0mMFtMisablFvRXZ2Tj158KQOF78f9WSROMQBAAA=",
+                "Positions": [
+                  "-163.5515,-29.81995,64",
+                  "163.5515,-29.81995,64",
+                  "163.5515,29.81995,64",
+                  "-163.5515,29.81995,64",
+                  "-163.5515,29.81995,-64",
+                  "163.5515,29.81995,-64",
+                  "163.5515,-29.81995,-64",
+                  "-163.5515,-29.81995,-64"
+                ],
+                "TextureCoord": [
+                  "1.277746,0.2329683",
+                  "-1.277746,-0.5",
+                  "1.277746,-0.2329683",
+                  "-0.2329683,-0.5",
+                  "-1.277746,-0.2329683",
+                  "-1.277746,-0.5",
+                  "-1.277746,0.2329683",
+                  "-0.2329683,-0.5",
+                  "1.277746,-0.2329683",
+                  "1.277746,0.5",
+                  "1.277746,0.2329683",
+                  "0.2329683,0.5",
+                  "-1.277746,0.2329683",
+                  "1.277746,0.5",
+                  "-1.277746,-0.2329683",
+                  "0.2329683,0.5",
+                  "0.2329683,-0.5",
+                  "-1.277746,0.5",
+                  "-0.2329683,0.5",
+                  "1.277746,-0.5",
+                  "-0.2329683,0.5",
+                  "1.277746,-0.5",
+                  "0.2329683,-0.5",
+                  "-1.277746,0.5"
+                ],
+                "TextureUAxis": [
+                  "1,0,0",
+                  "1,0,-0",
+                  "0,-1,0",
+                  "0,1,0",
+                  "-1,0,0",
+                  "1,-0,0"
+                ],
+                "TextureVAxis": [
+                  "0,-1,0",
+                  "0,-1,0",
+                  "0,0,-1",
+                  "-0,0,-1",
+                  "0,0,-1",
+                  "-0,0,-1"
+                ],
+                "TextureScale": [
+                  "0.25,0.2500001",
+                  "0.25,0.2500001",
+                  "0.25,0.25",
+                  "0.25,0.25",
+                  "0.25,0.25",
+                  "0.25,0.25"
+                ],
+                "TextureOffset": [
+                  "69.65979,68.92896",
+                  "69.65979,68.92897",
+                  "68.92909,89.73175",
+                  "443.0709,89.73175",
+                  "442.3402,89.73175",
+                  "69.65979,89.73175"
+                ],
+                "MaterialIndex": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "EdgeFlags": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "Materials": [
+                  "materials/dev/reflectivity_10.vmat"
+                ]
+              },
+              "SmoothingAngle": 40,
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "d4b85670-4751-4063-ba7a-3bad321fa9f7",
+      "Flags": 0,
+      "Name": "Spawnpoints (4)",
+      "Position": "-121.3863,83.36651,86.01774",
+      "Rotation": "0,0,-0.6087614,0.7933534",
+      "Enabled": true
+    },
+    {
+      "__guid": "e8c0daa8-c023-4e40-a8f1-a2066fbd48d5",
+      "Flags": 0,
+      "Name": "Spawnpoints (7)",
+      "Position": "-37.25986,113.1782,86.0178",
+      "Rotation": "0,0,-0.6087614,0.7933534",
+      "Enabled": true
+    },
+    {
+      "__guid": "89908c8c-f296-42c5-a215-21bba4f39f2d",
+      "Flags": 0,
+      "Name": "Spawnpoints (10)",
+      "Position": "-22.87091,69.51475,86.01769",
+      "Rotation": "0,0,-0.6087614,0.7933534",
+      "Enabled": true
+    },
+    {
+      "__guid": "53052a56-b2f1-4774-a92e-43f716e59574",
+      "Flags": 0,
+      "Name": "Spawnpoints (13)",
+      "Position": "-125.7063,49.09717,86.01769",
+      "Rotation": "0,0,-0.6087614,0.7933534",
+      "Enabled": true
+    },
+    {
+      "__guid": "f99272ab-d62e-4def-a84e-b7ee49f2fa77",
+      "Flags": 0,
+      "Name": "Spawnpoints (1)",
+      "Position": "-171.1157,89.01239,86.0179",
+      "Rotation": "0,0,-0.7205952,0.693356",
+      "Enabled": true
+    },
+    {
+      "__guid": "7543d042-093a-4244-bfc7-77ec29c3b3a2",
+      "Flags": 0,
+      "Name": "Spawnpoints (5)",
+      "Position": "-91.32381,73.745,86.0179",
+      "Rotation": "0,0,-0.7205952,0.693356",
+      "Enabled": true
+    },
+    {
+      "__guid": "89635131-ed3b-4c15-838e-1e5fc77d45a2",
+      "Flags": 0,
+      "Name": "Spawnpoints (8)",
+      "Position": "-7.197365,103.5567,86.01796",
+      "Rotation": "0,0,-0.7205952,0.693356",
+      "Enabled": true
+    },
+    {
+      "__guid": "cc77ac6d-1669-4460-a0ba-cd14c7f8453f",
+      "Flags": 0,
+      "Name": "Spawnpoints (11)",
+      "Position": "7.191586,59.89325,86.01785",
+      "Rotation": "0,0,-0.7205952,0.693356",
+      "Enabled": true
+    },
+    {
+      "__guid": "f891d9de-4c21-40af-9949-0d4baa740df7",
+      "Flags": 0,
+      "Name": "Spawnpoints (14)",
+      "Position": "-95.64381,39.47567,86.01785",
+      "Rotation": "0,0,-0.7205952,0.693356",
+      "Enabled": true
+    },
+    {
+      "__guid": "06f4e67d-3d91-40a2-84e8-1879a4471225",
+      "Flags": 0,
+      "Name": "Spawnpoints (2)",
+      "Position": "-144.3637,106.5613,86.0179",
+      "Rotation": "0,0,-0.7768455,0.6296913",
+      "Enabled": true
+    },
+    {
+      "__guid": "d7ced9ee-b530-4f02-8915-22ec16772f22",
+      "Flags": 0,
+      "Name": "Spawnpoints (3)",
+      "Position": "-64.57179,91.29391,86.0179",
+      "Rotation": "0,0,-0.7768455,0.6296913",
+      "Enabled": true
+    },
+    {
+      "__guid": "ec85f6e5-e0fd-47d0-8970-ab8795d21e7e",
+      "Flags": 0,
+      "Name": "Spawnpoints (6)",
+      "Position": "19.55465,121.1056,86.01796",
+      "Rotation": "0,0,-0.7768455,0.6296913",
+      "Enabled": true
+    },
+    {
+      "__guid": "b867d742-77c2-49b3-9a5b-0427e1e50ac4",
+      "Flags": 0,
+      "Name": "Spawnpoints (9)",
+      "Position": "33.9436,77.44215,86.01785",
+      "Rotation": "0,0,-0.7768455,0.6296913",
+      "Enabled": true
+    },
+    {
+      "__guid": "83d545f6-dc87-4fc3-b4c3-fec1426b64f3",
+      "Flags": 0,
+      "Name": "Spawnpoints (12)",
+      "Position": "-68.8918,57.02457,86.01785",
+      "Rotation": "0,0,-0.7768455,0.6296913",
+      "Enabled": true
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "Metadata": {},
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "ResourceVersion": 2,
+  "Title": null,
+  "Description": null,
+  "__references": [
+    "evilinc.radio#48192",
+    "facepunch.beech_bush_small#60669",
+    "facepunch.tree_oak_big_a#38050",
+    "fpopium.door_wood#48520",
+    "microrost.building4out#16608"
+  ],
+  "__version": 2
+}

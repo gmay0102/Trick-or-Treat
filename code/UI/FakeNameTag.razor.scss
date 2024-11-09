@@ -1,0 +1,14 @@
+.nametag {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Pixelify Sans';
+	font-smooth: never;
+	color: rgba(245, 245, 245, 0.9);
+	font-size: 28px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}

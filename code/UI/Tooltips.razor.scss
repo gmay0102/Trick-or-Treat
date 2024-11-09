@@ -1,0 +1,33 @@
+.tooltips-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 7vh; // Adjusted to keep above HoldingHUD
+    right: 18vh; // Align with HoldingHUD
+    z-index: 10; // Ensure tooltips are on top of other UI elements
+}
+
+.tooltip-box {
+    display: flex;
+    align-items: center; // Align the icon and text vertically
+    justify-content: flex-start; // Center icon and text horizontally
+    width: 100px; // Adjusted width for better readability
+    height: 40px; // Adjusted height for consistency
+    margin-bottom: 6px; // Space between each tooltip box
+    background-color: rgba(128, 128, 128, 0.1); // Same background as .image-box
+    border: 2px solid rgba(5, 5, 0, 0.8); // Same border as .image-box
+    //border-radius: 10px; // Rounded corners, consistent with image box
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); // Same shadow
+    font-family: 'Pixelify Sans';
+    font-size: 22px; // Same font size for consistency
+    font-weight: bold; // Lighter font weight to match the style
+    color: rgba(245, 245, 245, 0.8); // Same light color as .itemname
+    text-align: center; // Center the text inside the tooltip
+}
+
+.tooltip-box img {
+    margin-right: 10px; // Adds spacing between icon and text
+    width: 24px; // Icon width
+    height: 24px; // Icon height
+}

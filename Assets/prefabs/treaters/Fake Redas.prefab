@@ -1,0 +1,401 @@
+{
+  "RootObject": {
+    "__guid": "e0300e51-19cc-4535-b4d1-8d3707820806",
+    "Flags": 0,
+    "Name": "fake redas",
+    "Tags": "interact",
+    "NetworkMode": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.Citizen.CitizenAnimationHelper",
+        "__guid": "b10f6241-359d-48a6-8e0e-d9b408989645",
+        "BodyWeight": 1,
+        "EyesWeight": 1,
+        "HeadWeight": 1,
+        "LookAtEnabled": false,
+        "Target": {
+          "_type": "component",
+          "component_id": "35f9479d-8cd1-4ff9-b8a9-fef4ab72423f",
+          "go": "e0300e51-19cc-4535-b4d1-8d3707820806",
+          "component_type": "SkinnedModelRenderer"
+        }
+      },
+      {
+        "__type": "Sandbox.SkinnedModelRenderer",
+        "__guid": "35f9479d-8cd1-4ff9-b8a9-fef4ab72423f",
+        "BodyGroups": 325,
+        "CreateBoneObjects": false,
+        "Model": "models/citizen/citizen.vmdl",
+        "Morphs": {},
+        "Parameters": {
+          "bools": {},
+          "ints": {},
+          "floats": {},
+          "vectors": {},
+          "rotations": {}
+        },
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,1,1,1",
+        "UseAnimGraph": true
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "5d963529-2266-4387-9ded-612cfabb6009",
+        "Center": "0,0,32",
+        "IsTrigger": false,
+        "Scale": "32,32,64",
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
+      },
+      {
+        "__type": "TrickOrTreater",
+        "__guid": "35938244-c2b2-4d0f-a056-635e1b65939d",
+        "BadResponse": "you had one job",
+        "BestCandies": [
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/gummyworms.prefab"
+          }
+        ],
+        "BestResponse": "hell yeah brother",
+        "Denied": "sounds/kenney/ui/ui.navigate.deny.sound",
+        "Dialogue": {
+          "_type": "component",
+          "component_id": "22acceee-5477-444d-8a1b-05dce042152d",
+          "go": "d36acba0-0a13-41cb-8366-c71b2d9310dc",
+          "component_type": "DialogueBubble"
+        },
+        "lethal": false,
+        "OkCandies": [],
+        "Request": "i want gummy worms",
+        "scary": true,
+        "TreaterName": "redas"
+      },
+      {
+        "__type": "Fakeredas",
+        "__guid": "1deb2f90-1aaa-46a6-b346-7d2d0124e6f2"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "1176a36f-fc4c-4861-9daa-9da7aad41819",
+        "Flags": 0,
+        "Name": "Clothes",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "09e5be9c-ff87-40e5-88d6-d82448773c24",
+            "BodyGroups": 18446744073709551615,
+            "BoneMergeTarget": {
+              "_type": "component",
+              "component_id": "35f9479d-8cd1-4ff9-b8a9-fef4ab72423f",
+              "go": "e0300e51-19cc-4535-b4d1-8d3707820806",
+              "component_type": "SkinnedModelRenderer"
+            },
+            "CreateBoneObjects": false,
+            "Model": "models/citizen_clothes/jacket/hivis_jacket/models/hivis_jacket.vmdl",
+            "Morphs": {},
+            "Parameters": {
+              "bools": {},
+              "ints": {},
+              "floats": {},
+              "vectors": {},
+              "rotations": {}
+            },
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1",
+            "UseAnimGraph": true
+          },
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "426aacd6-a12f-4f02-887f-89e64204bdf0",
+            "BodyGroups": 18446744073709551615,
+            "BoneMergeTarget": {
+              "_type": "component",
+              "component_id": "35f9479d-8cd1-4ff9-b8a9-fef4ab72423f",
+              "go": "e0300e51-19cc-4535-b4d1-8d3707820806",
+              "component_type": "SkinnedModelRenderer"
+            },
+            "CreateBoneObjects": false,
+            "Model": "models/citizen_clothes/shirt/longsleeve_shirt/models/longsleeve_shirt.vmdl",
+            "Morphs": {},
+            "Parameters": {
+              "bools": {},
+              "ints": {},
+              "floats": {},
+              "vectors": {},
+              "rotations": {}
+            },
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1",
+            "UseAnimGraph": true
+          },
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "474f8b02-b0c6-4819-80c7-2ad0024d0a28",
+            "BodyGroups": 18446744073709551615,
+            "BoneMergeTarget": {
+              "_type": "component",
+              "component_id": "35f9479d-8cd1-4ff9-b8a9-fef4ab72423f",
+              "go": "e0300e51-19cc-4535-b4d1-8d3707820806",
+              "component_type": "SkinnedModelRenderer"
+            },
+            "CreateBoneObjects": false,
+            "Model": "models/citizen_clothes/hair/hair_shortscruffy/models/hair_shortscruffy.vmdl",
+            "Morphs": {},
+            "Parameters": {
+              "bools": {},
+              "ints": {},
+              "floats": {},
+              "vectors": {},
+              "rotations": {}
+            },
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "0.46512,0.35709,0.23364,1",
+            "UseAnimGraph": true
+          },
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "88713c69-eae0-4961-ba52-b55afb91d125",
+            "BodyGroups": 18446744073709551615,
+            "BoneMergeTarget": {
+              "_type": "component",
+              "component_id": "35f9479d-8cd1-4ff9-b8a9-fef4ab72423f",
+              "go": "e0300e51-19cc-4535-b4d1-8d3707820806",
+              "component_type": "SkinnedModelRenderer"
+            },
+            "CreateBoneObjects": false,
+            "Model": "models/citizen_clothes/hair/stubble/model/stubble.vmdl",
+            "Morphs": {},
+            "Parameters": {
+              "bools": {},
+              "ints": {},
+              "floats": {},
+              "vectors": {},
+              "rotations": {}
+            },
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1",
+            "UseAnimGraph": true
+          },
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "d151489f-5613-4e1b-b12e-7ea067125aef",
+            "BodyGroups": 18446744073709551615,
+            "BoneMergeTarget": {
+              "_type": "component",
+              "component_id": "35f9479d-8cd1-4ff9-b8a9-fef4ab72423f",
+              "go": "e0300e51-19cc-4535-b4d1-8d3707820806",
+              "component_type": "SkinnedModelRenderer"
+            },
+            "CreateBoneObjects": false,
+            "Model": "models/citizen_clothes/glasses/stylish_glasses/models/stylish_glasses_gold.vmdl",
+            "Morphs": {},
+            "Parameters": {
+              "bools": {},
+              "ints": {},
+              "floats": {},
+              "vectors": {},
+              "rotations": {}
+            },
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1",
+            "UseAnimGraph": true
+          },
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "7999ab91-ae9e-4252-af25-39fb064a27b8",
+            "BodyGroups": 18446744073709551615,
+            "BoneMergeTarget": {
+              "_type": "component",
+              "component_id": "35f9479d-8cd1-4ff9-b8a9-fef4ab72423f",
+              "go": "e0300e51-19cc-4535-b4d1-8d3707820806",
+              "component_type": "SkinnedModelRenderer"
+            },
+            "CreateBoneObjects": false,
+            "Model": "models/citizen_clothes/trousers/cargopants/models/brown_cargo_pants.vmdl",
+            "Morphs": {},
+            "Parameters": {
+              "bools": {},
+              "ints": {},
+              "floats": {},
+              "vectors": {},
+              "rotations": {}
+            },
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1",
+            "UseAnimGraph": true
+          },
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "9c6db3e7-5170-4511-bd8a-049dc86b1df7",
+            "BodyGroups": 18446744073709551615,
+            "BoneMergeTarget": {
+              "_type": "component",
+              "component_id": "35f9479d-8cd1-4ff9-b8a9-fef4ab72423f",
+              "go": "e0300e51-19cc-4535-b4d1-8d3707820806",
+              "component_type": "SkinnedModelRenderer"
+            },
+            "CreateBoneObjects": false,
+            "Model": "models/citizen_clothes/shoes/boots/models/black_boots.vmdl",
+            "Morphs": {},
+            "Parameters": {
+              "bools": {},
+              "ints": {},
+              "floats": {},
+              "vectors": {},
+              "rotations": {}
+            },
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1",
+            "UseAnimGraph": true
+          },
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "0329202f-2da7-402a-b0b1-14cdfba17b10",
+            "BodyGroups": 18446744073709551615,
+            "BoneMergeTarget": {
+              "_type": "component",
+              "component_id": "35f9479d-8cd1-4ff9-b8a9-fef4ab72423f",
+              "go": "e0300e51-19cc-4535-b4d1-8d3707820806",
+              "component_type": "SkinnedModelRenderer"
+            },
+            "CreateBoneObjects": false,
+            "Model": "models/citizen_clothes/hair/eyebrows/models/eyebrows.vmdl",
+            "Morphs": {},
+            "Parameters": {
+              "bools": {},
+              "ints": {},
+              "floats": {},
+              "vectors": {},
+              "rotations": {}
+            },
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "0.50233,0.40887,0.31541,1",
+            "UseAnimGraph": true
+          }
+        ]
+      },
+      {
+        "__guid": "d36acba0-0a13-41cb-8366-c71b2d9310dc",
+        "Flags": 0,
+        "Name": "Message",
+        "Position": "-14.33868,-0.000002563955,82.89044",
+        "Rotation": "0,0,-0.9999999,0.0000001490116",
+        "Scale": "2.720001,2.720001,2.720001",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "5a86ff35-273a-4b8b-bbf3-767d1f6ee44a",
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "PanelSize": "256,200",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.DialogueBubble",
+            "__guid": "22acceee-5477-444d-8a1b-05dce042152d",
+            "__enabled": false,
+            "newstring": "sounds/kenney/ui/ui.navigate.deny.sound",
+            "speak": "sound/ui/dialoguebox/techvoice.sound"
+          }
+        ]
+      }
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

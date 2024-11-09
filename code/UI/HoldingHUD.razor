@@ -1,0 +1,36 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+@if (!IsProxy)
+{
+    <div class="holding-container">
+        <div class="item-container">
+            <div class="image-box" style="background-image: url(@CurrentItemIcon);"></div>
+            <div class="itemname">@CurrentItemName</div>
+        </div>
+    </div>
+}
+
+@code
+{
+    string CurrentItemName { get; set; } = "No item";
+    string CurrentItemIcon { get; set; } = "UI/candyicons/background.png";
+
+    public void SetItem(ItemComponent item)
+    {
+        if (item != null)
+        {
+            CurrentItemName = item.ItemName;
+            CurrentItemIcon = item.ImageUrl;
+        }
+        else
+        {
+            CurrentItemName = "No item";
+            CurrentItemIcon = "UI/candyicons/background.png";
+        }
+    }
+
+    protected override int BuildHash() => System.HashCode.Combine(CurrentItemName, CurrentItemIcon);
+}

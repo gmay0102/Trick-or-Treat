@@ -1,0 +1,45 @@
+@using Sandbox
+@using Sandbox.UI
+@inherits PanelComponent
+
+
+@if (CurrentItem != null && !IsProxy)
+{
+    <div class="tooltips-container">
+        @if (!string.IsNullOrEmpty(CurrentItem.Attack1Tooltip))
+        {
+            <div class="tooltip-box">
+                <Image Texture=@Input.GetGlyph("attack1", InputGlyphSize.Small, true) />
+                @CurrentItem.Attack1Tooltip
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(CurrentItem.Attack2Tooltip))
+        {
+            <div class="tooltip-box">
+                <Image Texture=@Input.GetGlyph("use", InputGlyphSize.Small, true) />
+                @CurrentItem.Attack2Tooltip
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(CurrentItem.DropTooltip))
+        {
+            <div class="tooltip-box">
+                <Image Texture=@Input.GetGlyph("drop", InputGlyphSize.Small, true) />
+                @CurrentItem.DropTooltip
+            </div>
+        }
+    </div>
+}
+
+@code
+{
+    public ItemComponent CurrentItem { get; set; } = null;
+
+    public void SetItem(ItemComponent item)
+    {
+        CurrentItem = item;
+    }
+
+    protected override int BuildHash() => System.HashCode.Combine(@CurrentItem);
+}

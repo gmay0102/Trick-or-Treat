@@ -1,0 +1,22 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+@if(IsProxy || (Scene.Name == "mainmenu")) //if we're not the owner, display the nametag
+{
+<root>
+	<div class="nametag">@Network.Owner.DisplayName</div>
+</root>
+}
+
+@code
+{
+
+	[Property, TextArea] public string MyStringValue { get; set; } = "Hello World!";
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( @Network.Owner.DisplayName );
+}

@@ -1,0 +1,109 @@
+{
+  "RootObject": {
+    "__guid": "6c195cc2-3b87-4bd8-b0d8-5289cf66c4fc",
+    "Flags": 0,
+    "Name": "Sally",
+    "Position": "147.8753,-487.1269,-21.32497",
+    "Scale": "3.400001,3.400001,3.400001",
+    "Tags": "interact",
+    "NetworkMode": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.SpriteRenderer",
+        "__guid": "6b66e7fb-b49e-46e6-8e84-c93a1d53fee6",
+        "Additive": false,
+        "CastShadows": false,
+        "Color": "0.26047,0.26047,0.26047,1",
+        "DepthFeather": 0,
+        "FlipHorizontal": false,
+        "FlipVertical": false,
+        "FogStrength": 1,
+        "Lighting": true,
+        "Opaque": true,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "Size": "18,18",
+        "Texture": "textures/trickortreaters/sally.vtex"
+      },
+      {
+        "__type": "TrickOrTreater",
+        "__guid": "2c52d2b4-f0ef-4119-a2f7-b0c8063a356a",
+        "BadResponse": "fuck you",
+        "BestCandies": [
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/skittles.prefab"
+          }
+        ],
+        "BestResponse": "thanks a bunch! you\u0027re quite the champ,\ni\u0027ll leave now with a happy stamp!",
+        "Denied": "sounds/kenney/ui/ui.navigate.deny.sound",
+        "Dialogue": {
+          "_type": "component",
+          "component_id": "3a91c88e-d79b-40bd-b0b0-8005754a16e3",
+          "go": "60288372-2b7e-40ae-8197-daac593d97ac",
+          "component_type": "DialogueBubble"
+        },
+        "OkCandies": [],
+        "OkResponse": "",
+        "Request": "first they\u0027re sour, these treats i\u0027ve seen\ngive me what i want or i\u0027ll get mean",
+        "TreaterName": "Sally"
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "069368f5-6e22-472c-9643-70267512b87e",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "12.3,8.300007,17.9",
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "60288372-2b7e-40ae-8197-daac593d97ac",
+        "Flags": 0,
+        "Name": "Message",
+        "Position": "0,-3.563005,13.91401",
+        "Rotation": "0,0,-0.7071067,0.7071068",
+        "Scale": "0.8000001,0.8000001,0.8000001",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "714c6fc6-c791-4b88-b10a-591c5b2ce65d",
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "PanelSize": "256,200",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.DialogueBubble",
+            "__guid": "3a91c88e-d79b-40bd-b0b0-8005754a16e3",
+            "__enabled": false,
+            "newstring": "sounds/kenney/ui/ui.navigate.deny.sound",
+            "speak": "sound/ui/dialoguebox/kidvoice.sound"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

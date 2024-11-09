@@ -1,0 +1,165 @@
+{
+  "RootObject": {
+    "__guid": "78a29e58-ccb5-45ea-be0a-5792525cbfaa",
+    "Flags": 0,
+    "Name": "cornerpeeker",
+    "Scale": "1.651338,3.416699,3.453868",
+    "Tags": "interact",
+    "NetworkMode": 1,
+    "Components": [
+      {
+        "__type": "TrickOrTreater",
+        "__guid": "e61d41a4-0bf2-4c12-9efc-ccb2fce9e794",
+        "BadResponse": ".... thats not what i want",
+        "BestCandies": [
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/skittles.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/gummyworms.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/apple.prefab"
+          }
+        ],
+        "BestResponse": "..... thank you",
+        "Denied": "sounds/kenney/ui/ui.navigate.deny.sound",
+        "Dialogue": {
+          "_type": "component",
+          "component_id": "dab8bf4e-21d8-47a8-804b-95639c859078",
+          "go": "a1f74b32-f9a7-4f8a-856b-9077c54d155c",
+          "component_type": "DialogueBubble"
+        },
+        "lethal": false,
+        "OkCandies": [
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/smarties.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/items/candycorn.prefab"
+          }
+        ],
+        "OkResponse": "........... acceptable",
+        "Request": "sorry that i\u0027m\nso nervous, hehe\ncan i have any\ncandy that\u0027s\nfruit flavored",
+        "scary": true,
+        "TreaterName": "Corner Peeker"
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "ec478585-684a-45e3-9866-20eeb30aba50",
+        "Center": "7.59998,0,0",
+        "IsTrigger": false,
+        "Scale": "36.60003,14.10001,17.2",
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
+      },
+      {
+        "__type": "Shake",
+        "__guid": "190a5709-3dcf-475b-90ce-6a5301cb5b91",
+        "intensityMultiplier": 3
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "a1f74b32-f9a7-4f8a-856b-9077c54d155c",
+        "Flags": 0,
+        "Name": "Message",
+        "Position": "3.451412,-3.562999,3.37071",
+        "Rotation": "0.5,-0.5,-0.5,0.5",
+        "Scale": "0.8000001,0.7805597,0.8528341",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "913bb16e-27a1-40d0-a69b-86b5e5fabefb",
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "PanelSize": "256,210",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.DialogueBubble",
+            "__guid": "dab8bf4e-21d8-47a8-804b-95639c859078",
+            "__enabled": false,
+            "newstring": "sounds/kenney/ui/ui.navigate.deny.sound",
+            "speak": "sound/ui/dialoguebox/creepyvoice.sound"
+          }
+        ]
+      },
+      {
+        "__guid": "84b0f27e-4e42-442c-a188-f810a8b30efd",
+        "Flags": 0,
+        "Name": "Object",
+        "Position": "25.71458,-0.000004061707,5.387591",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.SpriteRenderer",
+            "__guid": "ecf31009-d59c-43d4-b964-f7995b2fbdd2",
+            "Additive": false,
+            "CastShadows": false,
+            "Color": "0.26047,0.26047,0.26047,1",
+            "DepthFeather": 0,
+            "FlipHorizontal": false,
+            "FlipVertical": false,
+            "FogStrength": 1,
+            "Lighting": true,
+            "Opaque": true,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "Size": "12,12",
+            "Texture": "textures/trickortreaters/cornerpeeker.vtex"
+          }
+        ]
+      }
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

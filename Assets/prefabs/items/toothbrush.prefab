@@ -1,0 +1,105 @@
+{
+  "RootObject": {
+    "__guid": "a36942ff-ea03-43b5-b840-c481c609131b",
+    "Flags": 0,
+    "Name": "toothbrush",
+    "Scale": "0.5634134,0.08054421,0.3758003",
+    "Tags": "nocollide",
+    "Enabled": true,
+    "NetworkMode": 1,
+    "OwnerTransfer": 0,
+    "Components": [
+      {
+        "__type": "ItemComponent",
+        "__guid": "8afd172d-b178-4620-9d70-b92786f6ad2e",
+        "Attack1Tooltip": "",
+        "Attack2Tooltip": "Give",
+        "DestroyOnDrop": true,
+        "DestroyOnPickup": true,
+        "DropTooltip": "Throw",
+        "ImageUrl": "UI/candyicons/toothbrush.png",
+        "ItemName": "Tooth Brush",
+        "PickUpSound": "sound/ui/pickup.sound",
+        "WorldModel": {
+          "_type": "gameobject",
+          "prefab": "prefabs/items/toothbrush.prefab"
+        }
+      },
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "3301ebb6-5c00-47f2-804d-886b565facce",
+        "BodyGroups": 18446744073709551615,
+        "Model": "models/props/paintsuplies/paint_roller.vmdl",
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "0.95814,0.54369,0.84071,1"
+      },
+      {
+        "__type": "Sandbox.ModelCollider",
+        "__guid": "8014652b-1502-4542-af0a-88d9eacefcae",
+        "IsTrigger": false,
+        "Model": "models/props/paintsuplies/paint_roller.vmdl",
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
+      },
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "3ad19fa8-fbca-4f5e-99d2-db89d9615a6a",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassCenterOverride": "0,0,0",
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "OverrideMassCenter": false,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      },
+      {
+        "__type": "SelfDestructComponent",
+        "__guid": "472ba467-86ca-482b-b8f8-feadfd1f9d53",
+        "Seconds": 45
+      }
+    ],
+    "Children": [],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [
+    "fpopium.paint_roller#54956"
+  ],
+  "__version": 1
+}

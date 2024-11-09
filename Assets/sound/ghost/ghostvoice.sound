@@ -1,0 +1,19 @@
+{
+  "UI": false,
+  "Volume": "0.8",
+  "Pitch": "1.1",
+  "Decibels": 70,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sound/ghost/ghost1.vsnd",
+    "sound/ghost/ghost2.vsnd",
+    "sound/ghost/ghost3.vsnd"
+  ],
+  "Occlusion": true,
+  "AirAbsorption": true,
+  "Transmission": true,
+  "OcclusionRadius": 64,
+  "DistanceAttenuation": true,
+  "__references": [],
+  "__version": 0
+}

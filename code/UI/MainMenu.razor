@@ -1,0 +1,47 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+
+<div class="main-menu">
+    <h1 class="title">TRICK OR TREAT</h1>
+    <div class="button-container">
+        <div class="start-button" @onmouseover=@OnButtonHover @onclick=@OnButtonClick>
+                START GAME
+        </div>
+    </div>
+</div>
+
+
+@code
+{
+
+    [Property, TextArea] public string MyStringValue { get; set; } = "Hello World!";
+
+    [Property] public SoundEvent RollOver { get; set; } = null;
+
+    [Property] private SceneFile HouseScene { get; set; } = null;
+
+    private void OnButtonHover()
+    {
+        Sound.Play(RollOver);
+    }
+
+    private void OnButtonClick()
+    {
+        if (IsProxy) return;
+
+        var chat = Scene.Components.GetInChildren<Chat>();
+
+        if (Connection.Local == Connection.Host)
+            Scene.Load(HouseScene);
+        else
+            chat.AddText("I just tried to start the game, but I'm not the host, am I stupid?");
+    }
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( MyStringValue );
+}

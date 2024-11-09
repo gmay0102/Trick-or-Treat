@@ -1,0 +1,106 @@
+{
+  "RootObject": {
+    "__guid": "bd99bb88-c1c7-4d58-9241-75b3a2b96f3a",
+    "Flags": 0,
+    "Name": "meat",
+    "Scale": "0.9589319,1.481834,2.956648",
+    "Tags": "nocollide",
+    "Enabled": true,
+    "NetworkMode": 1,
+    "OwnerTransfer": 0,
+    "Components": [
+      {
+        "__type": "SelfDestructComponent",
+        "__guid": "1bd01581-7a18-42a3-8aef-fe3858d7e215",
+        "Seconds": 45
+      },
+      {
+        "__type": "ItemComponent",
+        "__guid": "ecfce79f-ffaf-45f1-b1f2-bd0b207235e4",
+        "Attack1Tooltip": "",
+        "Attack2Tooltip": "Give",
+        "DestroyOnDrop": true,
+        "DestroyOnPickup": true,
+        "DropTooltip": "Drop",
+        "ImageUrl": "UI/candyicons/meat.png",
+        "ItemName": "Meat",
+        "PickUpSound": "sound/ui/fleshypickup.sound",
+        "WorldModel": {
+          "_type": "gameobject",
+          "prefab": "prefabs/items/meat.prefab"
+        }
+      },
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "8275ef7d-49c2-4edc-b942-9470312956f3",
+        "BodyGroups": 18446744073709551615,
+        "Model": "models/grilled_steak.vmdl",
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "0.92157,1,0.65098,1"
+      },
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "06b86f69-2e85-44be-a13b-c198c4571c90",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassCenterOverride": "0,0,0",
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "OverrideMassCenter": false,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "b3d8eaea-58ea-4c3c-bc57-44531342b503",
+        "Center": "0.2,0,0",
+        "IsTrigger": false,
+        "Scale": "14.79995,6.799971,1.400033",
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
+      }
+    ],
+    "Children": [],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [
+    "titanovsky.grilled_steak#11839"
+  ],
+  "__version": 1
+}

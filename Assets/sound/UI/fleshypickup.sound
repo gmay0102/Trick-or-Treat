@@ -1,0 +1,20 @@
+{
+  "UI": false,
+  "Volume": "0.6",
+  "Pitch": "1",
+  "Decibels": 70,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sound/ui/flesh_squishy_impact_hard4.vsnd",
+    "sound/ui/flesh_squishy_impact_hard3.vsnd",
+    "sound/ui/flesh_squishy_impact_hard2.vsnd",
+    "sound/ui/flesh_squishy_impact_hard1.vsnd"
+  ],
+  "Occlusion": true,
+  "AirAbsorption": true,
+  "Transmission": true,
+  "OcclusionRadius": 64,
+  "DistanceAttenuation": true,
+  "__references": [],
+  "__version": 0
+}

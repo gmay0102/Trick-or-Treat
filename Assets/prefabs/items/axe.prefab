@@ -1,0 +1,83 @@
+{
+  "RootObject": {
+    "__guid": "a0544001-cb4c-4336-906f-47b2582786cc",
+    "Flags": 0,
+    "Name": "axe",
+    "Tags": "highlight,item,nocollide,interact",
+    "Enabled": true,
+    "NetworkMode": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.SkinnedModelRenderer",
+        "__guid": "ee8b08d2-11a2-4a81-bb21-531a959203dd",
+        "BodyGroups": 18446744073709551615,
+        "CreateBoneObjects": false,
+        "Model": "model/6/untitled_62.vmdl",
+        "Morphs": {},
+        "Parameters": {
+          "bools": {},
+          "ints": {},
+          "floats": {},
+          "vectors": {},
+          "rotations": {}
+        },
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,1,1,1",
+        "UseAnimGraph": true
+      },
+      {
+        "__type": "ItemComponent",
+        "__guid": "14d1def0-6848-4dcf-b282-1fd29e863134",
+        "Attack1Tooltip": "Swing",
+        "DestroyOnDrop": false,
+        "DestroyOnPickup": true,
+        "DropTooltip": "Drop",
+        "ImageUrl": "UI/candyicons/axe.png",
+        "ItemName": "Axe",
+        "WorldModel": {
+          "_type": "gameobject",
+          "prefab": "prefabs/items/axe.prefab"
+        }
+      },
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "b738d0df-fac4-453b-990b-c753d9e423bd",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassCenterOverride": "0,0,0",
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "OverrideMassCenter": false,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      },
+      {
+        "__type": "Sandbox.ModelCollider",
+        "__guid": "ed455833-1823-4200-a6cb-c7cf5a5f85d0",
+        "IsTrigger": false,
+        "Model": "model/6/untitled_62.vmdl",
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
+      }
+    ],
+    "Children": [],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [
+    "tesssssssssst.untitled_14414871010#32889"
+  ],
+  "__version": 1
+}

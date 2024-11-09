@@ -1,0 +1,79 @@
+{
+  "RootObject": {
+    "__guid": "a36942ff-ea03-43b5-b840-c481c609131b",
+    "Flags": 0,
+    "Name": "skittles",
+    "Scale": "1.55015,0.9543148,2.956648",
+    "Tags": "nocollide",
+    "Enabled": true,
+    "NetworkMode": 1,
+    "OwnerTransfer": 0,
+    "Components": [
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "6ccd750c-05ab-49b6-a265-852d009a62b1",
+        "BodyGroups": 18446744073709551615,
+        "Health": 0,
+        "IsStatic": false,
+        "Model": "models/props/packaged_food/chocolate.vmdl",
+        "StartAsleep": false,
+        "Tint": "1,0,0,1"
+      },
+      {
+        "__type": "SelfDestructComponent",
+        "__guid": "dceae512-9731-45e4-bac1-9f55945ffe22",
+        "Seconds": 45
+      },
+      {
+        "__type": "ItemComponent",
+        "__guid": "8afd172d-b178-4620-9d70-b92786f6ad2e",
+        "Attack1Tooltip": "",
+        "Attack2Tooltip": "Give",
+        "DestroyOnDrop": true,
+        "DestroyOnPickup": true,
+        "DropTooltip": "Drop",
+        "ImageUrl": "UI/candyicons/skittles.png",
+        "ItemName": "Skittles",
+        "PickUpSound": "sound/ui/pickup.sound",
+        "WorldModel": {
+          "_type": "gameobject",
+          "prefab": "prefabs/items/skittles.prefab"
+        }
+      }
+    ],
+    "Children": [],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [
+    "facepunch.chocolate#55838"
+  ],
+  "__version": 1
+}

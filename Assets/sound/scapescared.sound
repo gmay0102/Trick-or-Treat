@@ -1,0 +1,21 @@
+{
+  "UI": false,
+  "Volume": "1",
+  "Pitch": "1",
+  "Decibels": 70,
+  "SelectionMode": "Forward",
+  "Sounds": [
+    "sound/old runescape soundtrack_ scape scared.vsnd",
+    "sound/mad monster mansion - banjo kazooie.vsnd",
+    "sound/adams.vsnd",
+    "sound/halloweentown.vsnd",
+    "sound/spooky.vsnd"
+  ],
+  "Occlusion": true,
+  "AirAbsorption": true,
+  "Transmission": true,
+  "OcclusionRadius": 64,
+  "DistanceAttenuation": true,
+  "__references": [],
+  "__version": 0
+}

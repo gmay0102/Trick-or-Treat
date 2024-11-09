@@ -1,0 +1,20 @@
+.crosshair-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+
+    .center-dot {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background-color: rgb(242, 242, 242, 0.1);
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}

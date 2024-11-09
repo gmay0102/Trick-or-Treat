@@ -1,0 +1,36 @@
+.holding-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    position: absolute;
+    bottom: 5vh;
+    right: 8vh;
+
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.image-box {
+    width: 95px;
+    height: 95px;
+    background-color: rgba(128, 128, 128, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border: 2px solid rgba(5, 5, 0, 0.8);
+    //border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itemname {
+    font-family: "Pixelify Sans";
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(245, 245, 245, 0.8);
+    text-align: center;
+}

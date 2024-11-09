@@ -1,0 +1,67 @@
+Chat {
+	position: absolute;
+	top: 100px;
+	left: 150px;
+	bottom: 200px;
+	width: 600px;
+	justify-content: center;
+	align-items: center;
+	font-weight: normal;
+	border-radius: 20px;
+	flex-direction: column;
+	align-items: stretch;
+	font-size: 17px;
+	font-family: 'Pixelify Sans';
+	gap: 10px;
+
+	.output {
+		flex-grow: 1;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: stretch;
+		gap: 5px;
+
+		.chat_entry {
+			//background-color: #222d;
+			padding: 2px;
+			gap: 10px;
+			text-shadow: 3px 3px 3px #000a;
+			align-items: center;
+
+			.avatar {
+				width: 24px;
+				height: 24px;
+				background-position: center;
+				background-size: cover;
+				border-radius: 100px;
+			}
+
+			.author {
+				color: #ca7e5d;
+				white-space: nowrap;
+				flex-shrink: 0;
+				text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;
+			}
+
+			.message {
+				color: #fff;
+				text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;
+			}
+		}
+	}
+
+	.input {
+		color: white;
+
+		.textentry {
+			align-items: flex-start;
+			white-space: normal;
+		}
+	}
+
+	&.open {
+		.input {
+			background-color: #3c414de6;
+		}
+	}
+}

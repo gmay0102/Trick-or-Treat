@@ -1,0 +1,3696 @@
+{
+  "__guid": "325a4042-0696-43dd-a79d-dcc314299ba3",
+  "GameObjects": [
+    {
+      "__guid": "b65b39f0-69e8-4f56-932a-72bc60ebcea3",
+      "Flags": 0,
+      "Name": "Game Master",
+      "Position": "173.8746,118.0195,204.6942",
+      "Enabled": true,
+      "NetworkMode": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.NetworkHelper",
+          "__guid": "a566130c-6024-45e7-9cef-385abdedd095",
+          "PlayerPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/player.prefab"
+          },
+          "SpawnPoints": [
+            {
+              "_type": "gameobject",
+              "go": "8e0dcb10-c09e-4193-90da-c50dc240eeff"
+            },
+            {
+              "_type": "gameobject",
+              "go": "5274478d-7c91-4b1d-8d78-7fe914ea6ea5"
+            },
+            {
+              "_type": "gameobject",
+              "go": "ad5b7d22-cce9-446a-b0f1-f4fa534d8de3"
+            }
+          ],
+          "StartServer": true
+        },
+        {
+          "__type": "ScareMaster",
+          "__guid": "c36a095b-245a-48be-a14c-5e4247975b22",
+          "doorKnockSound": "sound/door/doorknock.sound",
+          "DoorSpawnPosition": {
+            "_type": "gameobject",
+            "go": "7643fa1d-655f-41a1-a77f-c75a0cbf932c"
+          },
+          "MainMenu": "scenes/mainmenu.scene",
+          "Sans": {
+            "_type": "gameobject",
+            "prefab": "prefabs/treaters/sans.prefab"
+          },
+          "Treaters": [
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/axel.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/billy.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/cheetah.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/coconut boy.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/cornerpeeker.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/dentist.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/doom marine.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/dracula.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/dragon.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/elroy.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/fake redas.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/fisherman.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/flash.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/funnymouth.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/ghost.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/kinitopet.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/literal baby.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/revenant.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/sally.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/warden.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/treaters/zombie.prefab"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "604dff8d-41cb-47f3-a460-76a0d7fbdf8f",
+      "Flags": 0,
+      "Name": "Chat",
+      "Position": "-54.11452,285.3689,216.7409",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "7480730f-2c38-461b-ab32-a7d925b6e275",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ScaleStrategy": "ConsistentHeight",
+          "ZIndex": 100
+        },
+        {
+          "__type": "Chat",
+          "__guid": "1d8d4a9c-de6f-45b5-9e2a-018b365e6160"
+        }
+      ]
+    },
+    {
+      "__guid": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "0,249.7237,223.62",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "cf3cbf96-22b6-4be4-a5d0-672a96c17f9f",
+          "BackgroundColor": "0,0,0,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        },
+        {
+          "__type": "Sandbox.Tonemapping",
+          "__guid": "9d76f362-7227-40eb-a189-69353c780c46",
+          "__version": 1,
+          "AutoExposureEnabled": true,
+          "ExposureBias": 1.55,
+          "ExposureCompensation": 0,
+          "ExposureMethod": "RGB",
+          "MaximumExposure": 1.8,
+          "MinimumExposure": 1,
+          "Mode": "Legacy",
+          "Rate": 1
+        },
+        {
+          "__type": "Sandbox.Sharpen",
+          "__guid": "0bffee5e-19f2-41c4-88f9-faefbcce6bf4",
+          "Scale": 0.2
+        },
+        {
+          "__type": "Sandbox.Pixelate",
+          "__guid": "79c2e92c-d7b6-41c8-bc64-857a10d949e7",
+          "Scale": 0.002
+        },
+        {
+          "__type": "Sandbox.ColorGrading",
+          "__guid": "2b5cf136-8767-493d-9712-f48458f056d9",
+          "BlendFactor": 0.81,
+          "BlueCurve": [
+            {
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "ColorSpace": "None",
+          "ColorTempK": 24698.9,
+          "GradingMethod": "TemperatureControl",
+          "GreenCurve": [
+            {
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "HueCurve": [
+            {
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "LookupTexture": "particles/sheets/disksmoke.vtex",
+          "RedCurve": [
+            {
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "SaturationCurve": [
+            {
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "ValueCurve": [
+            {
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        {
+          "__type": "Sandbox.Highlight",
+          "__guid": "60532056-3017-46ea-8300-bfb987c1aac8"
+        },
+        {
+          "__type": "Sandbox.AmbientOcclusion",
+          "__guid": "28ad9b55-5199-430e-aa89-76182ec394fd",
+          "FalloffDistance": 1,
+          "Intensity": 16,
+          "Quality": "Medium",
+          "Radius": 32
+        }
+      ]
+    },
+    {
+      "__guid": "6e99792f-97ba-4097-9108-81be0836e636",
+      "Flags": 0,
+      "Name": "Front Door",
+      "Position": "163.5852,-71.7799,179.9536",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Tags": "highlight,interact,door",
+      "Enabled": true,
+      "NetworkMode": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "25b01860-2532-437e-9baf-1bfa1b7ec5bf",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/architecture/door/door_wood.vmdl",
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "b221a0e4-7f1f-4eb7-99c6-1c44f2d1028c",
+          "IsTrigger": false,
+          "Model": "models/architecture/door/door_wood.vmdl",
+          "Static": false,
+          "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "HalloweenDoor",
+          "__guid": "842ffcf9-5331-4c85-90b5-fd4c9c012e5b",
+          "AnimationCurve": [
+            {},
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "CloseFinishedSound": "sound/door/woodstop.sound",
+          "CloseSound": "sound/door/woodopen.sound",
+          "LockSound": "sound/door/locked.sound",
+          "OpenFinishedSound": "sound/door/openthud.sound",
+          "OpenSound": "sound/door/woodopen.sound",
+          "OpenTime": 1
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "57e4d5a2-3d71-4c56-b443-2b5f3d699a48",
+          "Flags": 0,
+          "Name": "Soundpoint",
+          "Position": "-3.507183,21.65965,57.69305",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SoundPointComponent",
+              "__guid": "841fb187-857e-4cc6-8d4d-b78309215408",
+              "DistanceAttenuation": false,
+              "DistanceAttenuationOverride": false,
+              "Force2d": false,
+              "MaxRepeatTime": 1,
+              "MinRepeatTime": 1,
+              "Occlusion": false,
+              "OcclusionOverride": false,
+              "OcclusionRadius": 32,
+              "Pitch": 1,
+              "PlayOnStart": true,
+              "ReflectionOverride": false,
+              "Reflections": false,
+              "Repeat": false,
+              "SoundOverride": false,
+              "StopOnNew": false,
+              "TargetMixer": {
+                "Name": "unknown",
+                "Id": "00000000-0000-0000-0000-000000000000"
+              },
+              "Volume": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "c151241b-8a0f-460b-b9a7-c28f66c99614",
+      "Flags": 0,
+      "Name": "Map",
+      "Position": "-126.4292,-187.5311,115.5769",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "add83797-a88e-47d7-a0f3-788e495b531c",
+          "__version": 1,
+          "EnableCollision": true,
+          "MapName": "maps/house.vmap",
+          "NoOrigin": false,
+          "OnMapLoaded": null,
+          "OnMapUnloaded": null,
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "94174fb8-7446-4f8f-9b50-01eb5c15fe2c",
+      "Flags": 0,
+      "Name": "Map Decoration",
+      "Position": "-126.4292,-187.5311,115.5769",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "cd8535b4-53e6-44c4-8dee-1b13b217505d",
+          "Flags": 0,
+          "Name": "Doorblocker",
+          "Position": "310.4292,126.3636,110.6701",
+          "Scale": "1.480691,0.1,2.994747",
+          "Tags": "ignore",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "b31bc987-61ff-4afa-a259-b18a12da27b2",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "32,32,32",
+              "Static": false,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
+        },
+        {
+          "__guid": "87bd4dda-b551-41b4-9d7c-763451b6ff11",
+          "Flags": 0,
+          "Name": "Ambience",
+          "Position": "228.1925,195.5311,134.9157",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SoundBoxComponent",
+              "__guid": "51a497e1-ce1d-4afe-835f-2e1987462203",
+              "DistanceAttenuation": false,
+              "DistanceAttenuationOverride": false,
+              "Force2d": false,
+              "MaxRepeatTime": 1,
+              "MinRepeatTime": 1,
+              "Occlusion": false,
+              "OcclusionOverride": false,
+              "OcclusionRadius": 32,
+              "Pitch": 1,
+              "PlayOnStart": true,
+              "ReflectionOverride": false,
+              "Reflections": false,
+              "Repeat": true,
+              "Scale": "1700,1200,300",
+              "SoundEvent": "sound/ambience-night-rural-campground-new-zeala-17140.sound",
+              "SoundOverride": false,
+              "StopOnNew": false,
+              "TargetMixer": {
+                "Name": "game",
+                "Id": "c4a7007e-ee1b-4e5e-9fe8-46fda87ad041"
+              },
+              "Volume": 0.7
+            }
+          ]
+        },
+        {
+          "__guid": "0fbcb413-1f25-4398-a929-85aadef0b605",
+          "Flags": 0,
+          "Name": "Lightswitches",
+          "Position": "-59.48769,758.808,-3.069397",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "0dabe08f-4520-49e6-b658-c707af18cb8d",
+              "Flags": 0,
+              "Name": "Lightswitch",
+              "Position": "780.0549,-378.3137,125.3187",
+              "Rotation": "0.00000005960464,0.00000005960464,-0.7071067,0.7071067",
+              "Tags": "highlight,interact",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "7d6545b5-aa5a-484c-a09c-67b5d9655547",
+                  "IsTrigger": false,
+                  "Model": "wall sockets/outlet_switch.vmdl",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "e9388685-a86a-406c-8f00-f11f5d244fcb",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "wall sockets/outlet_switch.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Lightswitch",
+                  "__guid": "d452e0f3-c85a-4b4e-bcb9-39b44dd6e680",
+                  "lights": [
+                    {
+                      "_type": "component",
+                      "component_id": "c5b1a827-4531-4e83-a95e-cca46d9c74b4",
+                      "go": "05ed0f97-c595-4198-8903-211f6d7989ba",
+                      "component_type": "PointLight"
+                    }
+                  ],
+                  "SwitchSound": "sound/lightswitch.sound"
+                }
+              ]
+            },
+            {
+              "__guid": "b72a8143-ff07-460c-bc06-cf2cbe5e103d",
+              "Flags": 0,
+              "Name": "Lightswitch (2)",
+              "Position": "703.067,-223.0583,125.3187",
+              "Tags": "highlight,interact",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "f7be024c-9380-4291-ae36-ecede25823f3",
+                  "IsTrigger": false,
+                  "Model": "wall sockets/outlet_switch.vmdl",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "33d8d69e-1285-470e-b0bc-e6fb20d2cca0",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "wall sockets/outlet_switch.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Lightswitch",
+                  "__guid": "4bc90abd-2154-46a9-862d-d8372d3b0b59",
+                  "lights": [
+                    {
+                      "_type": "component",
+                      "component_id": "d2093b4b-3c1f-413a-b223-919a55567cd8",
+                      "go": "af7277e0-0962-4538-8102-5ea073d36506",
+                      "component_type": "PointLight"
+                    }
+                  ],
+                  "SwitchSound": "sound/lightswitch.sound"
+                }
+              ]
+            },
+            {
+              "__guid": "b8c012f7-867b-458a-89a5-0560b6eafe02",
+              "Flags": 0,
+              "Name": "Lightswitch (3)",
+              "Position": "659.7122,-243.3222,125.3187",
+              "Rotation": "0,0,0.7071067,0.7071068",
+              "Tags": "highlight,interact",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "ae9e5d4d-4826-41c7-a323-88b20fcc4974",
+                  "IsTrigger": false,
+                  "Model": "wall sockets/outlet_switch.vmdl",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "21ce3fa8-4d51-4640-85e1-5557603732ec",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "wall sockets/outlet_switch.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Lightswitch",
+                  "__guid": "b9d06642-f27a-4470-bd33-c1ae0ae6d6c9",
+                  "lights": [
+                    {
+                      "_type": "component",
+                      "component_id": "52504948-a0ed-45cd-80bb-73f742f176a1",
+                      "go": "8e5e4476-a845-4ce5-83f0-cb55056f79b7",
+                      "component_type": "PointLight"
+                    }
+                  ],
+                  "SwitchSound": "sound/lightswitch.sound"
+                }
+              ]
+            },
+            {
+              "__guid": "97814ffd-2165-4c05-a9a4-f8a2ccfc5d95",
+              "Flags": 0,
+              "Name": "Lightswitch (1)",
+              "Position": "618.5281,-378.3134,125.3187",
+              "Rotation": "0.00000005960464,0.00000005960464,-0.7071067,0.7071067",
+              "Tags": "highlight,interact",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "0456ad4c-2fc4-4314-97f8-7152e9884270",
+                  "IsTrigger": false,
+                  "Model": "wall sockets/outlet_switch.vmdl",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "98aaa9de-21a3-49ab-a600-b2e0eead7dac",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "wall sockets/outlet_switch.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Lightswitch",
+                  "__guid": "89af7d6f-16ad-4588-8530-726b8cd42efd",
+                  "lights": [
+                    {
+                      "_type": "component",
+                      "component_id": "d10bb782-fc3e-4b2d-a23e-04845a8b596f",
+                      "go": "4396f677-d646-4f5b-8f85-6043e959ea2a",
+                      "component_type": "PointLight"
+                    }
+                  ],
+                  "SwitchSound": "sound/lightswitch.sound"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "a0c332e6-36ca-4308-a794-c4eb8ee3435e",
+          "Flags": 0,
+          "Name": "Doors",
+          "Position": "126.4292,187.5311,-115.5769",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "ea481216-a34c-49e9-ae05-dd78661b7c30",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "487.55,196,179.9537",
+              "Rotation": "0,0,-0.7071069,-0.7071066",
+              "Tags": "highlight,interact,door",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "772a1811-0d21-45b8-ac77-c7ba69c38337",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/architecture/door/door_wood.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "1f4fc95e-177e-47c7-98ea-4a21846b0e61",
+                  "IsTrigger": false,
+                  "Model": "models/architecture/door/door_wood.vmdl",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "Door",
+                  "__guid": "234ef071-90fd-46e7-a130-5ea3f94499cb",
+                  "AnimationCurve": [
+                    {},
+                    {
+                      "x": 1,
+                      "y": 1
+                    }
+                  ],
+                  "CloseFinishedSound": "sound/door/woodstop.sound",
+                  "CloseSound": "sound/door/woodopen.sound",
+                  "OpenAwayFromPlayer": true,
+                  "OpenFinishedSound": "sound/door/openthud.sound",
+                  "OpenSound": "sound/door/woodopen.sound",
+                  "OpenTime": 1,
+                  "TargetAngle": 90
+                },
+                {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "54d8a455-e010-414f-b5db-92e577869faf",
+                  "AngularDamping": 0,
+                  "Gravity": false,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": true,
+                    "Y": true,
+                    "Z": true,
+                    "Pitch": true,
+                    "Yaw": true,
+                    "Roll": true
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MotionEnabled": true,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              ]
+            },
+            {
+              "__guid": "fd805ef8-e3d5-4f46-8ebb-5c4c1bc7b9a8",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "411.55,326,179.9537",
+              "Rotation": "0,0,-0.7071067,0.7071068",
+              "Tags": "highlight,interact,door",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "8fbb68ef-d978-4c76-8bde-b96544bf9d49",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/architecture/door/door_wood.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "52e067b0-b6a1-484f-8057-4527e6eaf40f",
+                  "IsTrigger": false,
+                  "Model": "models/architecture/door/door_wood.vmdl",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "Door",
+                  "__guid": "8e75abf6-41be-4fcf-8364-39c948c0b936",
+                  "AnimationCurve": [
+                    {},
+                    {
+                      "x": 1,
+                      "y": 1
+                    }
+                  ],
+                  "CloseFinishedSound": "sound/door/woodstop.sound",
+                  "CloseSound": "sound/door/woodopen.sound",
+                  "OpenAwayFromPlayer": true,
+                  "OpenFinishedSound": "sound/door/openthud.sound",
+                  "OpenSound": "sound/door/woodopen.sound",
+                  "OpenTime": 1,
+                  "TargetAngle": 90
+                },
+                {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "0438f1d9-24a1-49ac-ac84-c3114d2cb684",
+                  "AngularDamping": 0,
+                  "Gravity": false,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": true,
+                    "Y": true,
+                    "Z": true,
+                    "Pitch": true,
+                    "Yaw": true,
+                    "Roll": true
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MotionEnabled": true,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              ]
+            },
+            {
+              "__guid": "bcc6b7b6-386d-4357-bf26-1019fffe4660",
+              "Flags": 0,
+              "Name": "Basement Door",
+              "Position": "275.55,326,179.9537",
+              "Rotation": "0,0,-0.7071067,0.7071068",
+              "Tags": "highlight",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "9a246fd4-8e28-4324-8db1-5e50d999be66",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/architecture/door/door_metal.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "438a383f-065d-46a8-a003-7fa10bb8a0e9",
+                  "IsTrigger": false,
+                  "Model": "models/architecture/door/door_wood.vmdl",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "Door",
+                  "__guid": "b05158da-1a23-40f9-8fd3-e322797cad08",
+                  "AnimationCurve": [
+                    {},
+                    {
+                      "x": 1,
+                      "y": 1
+                    }
+                  ],
+                  "CloseFinishedSound": "sound/door/metalstop.sound",
+                  "CloseSound": "sound/door/metalopen.sound",
+                  "OpenAwayFromPlayer": true,
+                  "OpenSound": "sound/door/metalopen.sound",
+                  "OpenTime": 1,
+                  "TargetAngle": 90
+                }
+              ]
+            },
+            {
+              "__guid": "570514dd-1eb5-4d7c-94fa-1b03cf24a0dc",
+              "Flags": 0,
+              "Name": "Kitchen Cabinet",
+              "Position": "221.3875,404.8365,180.28",
+              "Rotation": "0,0,-0.9999999,0.0000001490116",
+              "Scale": "0.9582002,1.368336,1.089871",
+              "Tags": "highlight,interact,door",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "6d986fea-d719-4d8d-b5a5-8af7d7b9257b",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/props/furniture/counter_door_01.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "32bddc1a-93f3-4cbe-83e1-c845440ebe55",
+                  "IsTrigger": false,
+                  "Model": "models/props/furniture/counter_door_01.vmdl",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "Door",
+                  "__guid": "42d15336-b53b-43ce-a3f3-b673e068da8a",
+                  "AnimationCurve": [
+                    {},
+                    {
+                      "x": 1,
+                      "y": 1
+                    }
+                  ],
+                  "CloseFinishedSound": "sound/door/openthud.sound",
+                  "CloseSound": "sound/door/normalopen.sound",
+                  "OpenAwayFromPlayer": false,
+                  "OpenSound": "sound/door/normalopen.sound",
+                  "OpenTime": 0.8,
+                  "TargetAngle": 90
+                },
+                {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "4ed763b8-547a-4e28-99fd-68f4c3c54194",
+                  "AngularDamping": 0,
+                  "Gravity": false,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": true,
+                    "Y": true,
+                    "Z": true,
+                    "Pitch": true,
+                    "Yaw": true,
+                    "Roll": true
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MotionEnabled": true,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              ]
+            },
+            {
+              "__guid": "fa001a54-792b-4c6c-8037-4d64cde01e56",
+              "Flags": 0,
+              "Name": "Fridge Door",
+              "Position": "142.4473,479.3158,200.9451",
+              "Rotation": "0,0,-0.7071066,0.7071068",
+              "Tags": "door,interact,highlight",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "4c1d0ab1-2da3-4de6-a1ed-c8943620721a",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/props/fridge/fridge_door_main.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "7f3c7456-76ad-4794-8cef-4f6de903cc07",
+                  "IsTrigger": false,
+                  "Model": "models/props/fridge/fridge_door_main.vmdl",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "Door",
+                  "__guid": "8ba46473-c97e-49c5-b9bf-ec7a436e4e1c",
+                  "AnimationCurve": [
+                    {},
+                    {
+                      "x": 1,
+                      "y": 1
+                    }
+                  ],
+                  "CloseFinishedSound": "sound/door/openthud.sound",
+                  "CloseSound": "sound/door/normalopen.sound",
+                  "OpenAwayFromPlayer": false,
+                  "OpenSound": "sound/door/normalopen.sound",
+                  "OpenTime": 0.8,
+                  "TargetAngle": 90
+                },
+                {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "0788dda1-a96f-4f54-97c4-b5b0207baee3",
+                  "AngularDamping": 0,
+                  "Gravity": false,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": true,
+                    "Y": true,
+                    "Z": true,
+                    "Pitch": true,
+                    "Yaw": true,
+                    "Roll": true
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MotionEnabled": true,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              ]
+            },
+            {
+              "__guid": "eb22143e-065c-4366-abd6-430618ffb3a0",
+              "Flags": 0,
+              "Name": "Freezer Door",
+              "Position": "142.4469,479.3162,233.5511",
+              "Rotation": "0,0,-0.7071066,0.7071068",
+              "Tags": "door,interact,highlight",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "9053eb6d-982b-496c-a02b-526a82854950",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/props/fridge/fridge_door_top.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "9fc5cd44-82fa-468d-839f-165fa2ff59dd",
+                  "IsTrigger": false,
+                  "Model": "models/props/fridge/fridge_door_top.vmdl",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "Door",
+                  "__guid": "6876422e-782e-4678-9861-7330e2b55356",
+                  "AnimationCurve": [
+                    {},
+                    {
+                      "x": 1,
+                      "y": 1
+                    }
+                  ],
+                  "CloseFinishedSound": "sound/door/openthud.sound",
+                  "CloseSound": "sound/door/normalopen.sound",
+                  "OpenAwayFromPlayer": false,
+                  "OpenSound": "sound/door/normalopen.sound",
+                  "OpenTime": 0.8,
+                  "TargetAngle": 90
+                },
+                {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "2f657498-9772-4344-9773-db2d51122868",
+                  "AngularDamping": 0,
+                  "Gravity": false,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": true,
+                    "Y": true,
+                    "Z": true,
+                    "Pitch": true,
+                    "Yaw": true,
+                    "Roll": true
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MotionEnabled": true,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              ]
+            },
+            {
+              "__guid": "7f1f0c91-e1e8-4cf7-b71c-9ece39b7983f",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "539.55,196,179.9537",
+              "Rotation": "0,0,0.7071069,-0.7071066",
+              "Tags": "highlight,interact,door",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "83859161-b771-4f48-af63-319af3aef1c4",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/architecture/door/door_wood.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "33096530-d9d3-4c4b-84c4-269c28a708ff",
+                  "IsTrigger": false,
+                  "Model": "models/architecture/door/door_wood.vmdl",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "Door",
+                  "__guid": "6d22645c-7709-4988-9391-257a62077267",
+                  "AnimationCurve": [
+                    {},
+                    {
+                      "x": 1,
+                      "y": 1
+                    }
+                  ],
+                  "CloseFinishedSound": "sound/door/woodstop.sound",
+                  "CloseSound": "sound/door/woodopen.sound",
+                  "OpenAwayFromPlayer": true,
+                  "OpenFinishedSound": "sound/door/openthud.sound",
+                  "OpenSound": "sound/door/woodopen.sound",
+                  "OpenTime": 1,
+                  "TargetAngle": 90
+                },
+                {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "4d305bc0-4294-45f1-890b-b5e22a7cf060",
+                  "AngularDamping": 0,
+                  "Gravity": false,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": true,
+                    "Y": true,
+                    "Z": true,
+                    "Pitch": true,
+                    "Yaw": true,
+                    "Roll": true
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MotionEnabled": true,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              ]
+            },
+            {
+              "__guid": "e768f13b-f65c-4bca-bf9f-4684e97d52f7",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "535.55,323.9999,179.9537",
+              "Rotation": "0,0,-0.7071067,0.7071068",
+              "Tags": "highlight,interact,door",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "7d52b18d-0ded-4650-bcff-09d3e8172431",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/architecture/door/door_wood.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.ModelCollider",
+                  "__guid": "94fba1b0-5915-4c45-965c-a3ca580f9ddc",
+                  "IsTrigger": false,
+                  "Model": "models/architecture/door/door_wood.vmdl",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "Door",
+                  "__guid": "2fbb92a0-e57d-4ccb-844a-fbb7a3f872ff",
+                  "AnimationCurve": [
+                    {},
+                    {
+                      "x": 1,
+                      "y": 1
+                    }
+                  ],
+                  "CloseFinishedSound": "sound/door/woodstop.sound",
+                  "CloseSound": "sound/door/woodopen.sound",
+                  "OpenAwayFromPlayer": true,
+                  "OpenFinishedSound": "sound/door/openthud.sound",
+                  "OpenSound": "sound/door/woodopen.sound",
+                  "OpenTime": 1,
+                  "TargetAngle": 90
+                },
+                {
+                  "__type": "Sandbox.Rigidbody",
+                  "__guid": "b2dc13db-7a72-46f2-aeae-c6bd355980dd",
+                  "AngularDamping": 0,
+                  "Gravity": false,
+                  "LinearDamping": 0,
+                  "Locking": {
+                    "X": true,
+                    "Y": true,
+                    "Z": true,
+                    "Pitch": true,
+                    "Yaw": true,
+                    "Roll": true
+                  },
+                  "MassCenterOverride": "0,0,0",
+                  "MassOverride": 0,
+                  "MotionEnabled": true,
+                  "OverrideMassCenter": false,
+                  "RigidbodyFlags": 0,
+                  "StartAsleep": false
+                }
+              ]
+            },
+            {
+              "__guid": "d86a46e4-b3c7-49d0-bacf-ed63bc301f5a",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "127.252,489.3018,220.8441",
+              "Enabled": true,
+              "NetworkMode": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.SoundPointComponent",
+                  "__guid": "4ff8b93a-e952-4dc9-8f37-26969aa1e509",
+                  "DistanceAttenuation": false,
+                  "DistanceAttenuationOverride": false,
+                  "Force2d": false,
+                  "MaxRepeatTime": 1,
+                  "MinRepeatTime": 1,
+                  "Occlusion": false,
+                  "OcclusionOverride": false,
+                  "OcclusionRadius": 32,
+                  "Pitch": 1,
+                  "PlayOnStart": true,
+                  "ReflectionOverride": false,
+                  "Reflections": false,
+                  "Repeat": true,
+                  "SoundEvent": "sound/world/refrigeratorhum.sound",
+                  "SoundOverride": false,
+                  "StopOnNew": false,
+                  "TargetMixer": {
+                    "Name": "unknown",
+                    "Id": "00000000-0000-0000-0000-000000000000"
+                  },
+                  "Volume": 0.9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "afa127ab-cced-49f2-9946-59a0c414e92d",
+          "Flags": 0,
+          "Name": "Candy Boxes",
+          "Position": "241.5825,818.954,73.8361",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "b3b55f16-a763-43b1-bdb2-bcd671684e6d",
+              "Flags": 0,
+              "Name": "Meat Box",
+              "Enabled": true,
+              "Children": [
+                {
+                  "__guid": "7180bd60-e13b-45c9-987b-74026e44a1a7",
+                  "Flags": 0,
+                  "Name": "Meat Box",
+                  "Position": "12.24258,-139.7202,39.49008",
+                  "Rotation": "0.0000008944764,-0.000001053958,0.6277341,0.7784278",
+                  "Scale": "1.505644,2.651881,5.201123",
+                  "Tags": "highlight,interact",
+                  "Enabled": true,
+                  "OwnerTransfer": 0,
+                  "Components": [
+                    {
+                      "__type": "ItemComponent",
+                      "__guid": "85c9e15f-6408-4e1f-8e17-5cb35d8374b3",
+                      "Attack1Tooltip": "",
+                      "Attack2Tooltip": "Give",
+                      "DestroyOnDrop": true,
+                      "DestroyOnPickup": false,
+                      "DropTooltip": "Drop",
+                      "ImageUrl": "UI/candyicons/meat.png",
+                      "ItemName": "Meat",
+                      "PickUpSound": "sound/ui/fleshypickup.sound",
+                      "WorldModel": {
+                        "_type": "gameobject",
+                        "prefab": "prefabs/items/meat.prefab"
+                      }
+                    },
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "8275ef7d-49c2-4edc-b942-9470312956f3",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/grilled_steak.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderType": "On",
+                      "Tint": "0.92157,1,0.65098,1"
+                    },
+                    {
+                      "__type": "Sandbox.BoxCollider",
+                      "__guid": "b3d8eaea-58ea-4c3c-bc57-44531342b503",
+                      "Center": "0.2,0,0",
+                      "IsTrigger": false,
+                      "Scale": "13.69995,8.899969,1.400033",
+                      "Static": false,
+                      "SurfaceVelocity": "0,0,0"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "f61ce8e6-7422-45e6-b479-3ca4187df153",
+                  "Flags": 0,
+                  "Name": "Meat Box Panel",
+                  "Position": "13.08878,-139.7202,45.86487",
+                  "Rotation": "0,0,-0.7071067,0.7071068",
+                  "Scale": "0.8092071,0.8159381,0.7427824",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.WorldPanel",
+                      "__guid": "4a0d589b-0c46-44f8-a8b7-89f81cc07e37",
+                      "HorizontalAlign": "Center",
+                      "InteractionRange": 1000,
+                      "LookAtCamera": true,
+                      "PanelSize": "512,512",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderScale": 1,
+                      "VerticalAlign": "Center"
+                    },
+                    {
+                      "__type": "Sandbox.FakeNameTag",
+                      "__guid": "024b4668-56f7-4d25-a33d-114b86ffb1da",
+                      "MyStringValue": "Meat"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "21fd511e-3440-48ec-a231-eec2a87abe99",
+              "Flags": 0,
+              "Name": "Reeses Box",
+              "Position": "118.8762,-237.55,24.2388",
+              "Rotation": "0,0,-0.9990777,-0.0429383",
+              "Scale": "1.090931,1.140231,0.7427824",
+              "Tags": "item,highlight,interact",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "6bcab2ca-e986-4339-9c25-995d470065f9",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_props/small_junk/carton_box.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,0.51628,0.39535,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "098efcdb-b583-4b43-9de8-2098b358672d",
+                  "Center": "-0.3000001,0,2.899999",
+                  "IsTrigger": false,
+                  "Scale": "16.90001,12.80001,6.799986",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "ItemComponent",
+                  "__guid": "a77613ff-dac2-48de-bb1c-bd2774d21921",
+                  "Attack1Tooltip": "",
+                  "Attack2Tooltip": "Give",
+                  "DestroyOnDrop": true,
+                  "DestroyOnPickup": false,
+                  "DropTooltip": "Drop",
+                  "ImageUrl": "UI/candyicons/reeses.png",
+                  "ItemName": "Reeses",
+                  "PickUpSound": "sound/ui/pickup.sound",
+                  "WorldModel": {
+                    "_type": "gameobject",
+                    "prefab": "prefabs/items/reeses.prefab"
+                  }
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "4bf5598b-dec6-410a-b141-71e335b85743",
+                  "Flags": 0,
+                  "Name": "World",
+                  "Position": "0.0000002185461,-0.00005352879,16.06096",
+                  "Scale": "0.7417583,0.7155902,1",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.WorldPanel",
+                      "__guid": "c68b9229-eaed-4659-9c41-1873cb6d2cf7",
+                      "HorizontalAlign": "Center",
+                      "InteractionRange": 1000,
+                      "LookAtCamera": true,
+                      "PanelSize": "512,512",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderScale": 1,
+                      "VerticalAlign": "Center"
+                    },
+                    {
+                      "__type": "Sandbox.FakeNameTag",
+                      "__guid": "a8e9028c-2ca9-4a50-8d35-669ae9bf8444",
+                      "MyStringValue": "Reeses"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "6d9ef7e9-4092-4965-88b2-7af34568af62",
+              "Flags": 0,
+              "Name": "Apples Box",
+              "Position": "124.8968,-177.4049,24.2388",
+              "Rotation": "0,0,-0.9990777,-0.0429383",
+              "Scale": "1.090931,0.7497826,0.7427824",
+              "Tags": "interact,highlight,item",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "37404edd-3078-461c-addf-904f05ff556c",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_props/small_junk/apple_tray.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "ItemComponent",
+                  "__guid": "dda282f8-940a-4c3f-8ee6-0a190a13c7f2",
+                  "Attack1Tooltip": "",
+                  "Attack2Tooltip": "Give",
+                  "DestroyOnDrop": true,
+                  "DestroyOnPickup": false,
+                  "DropTooltip": "Drop",
+                  "ImageUrl": "UI/candyicons/apple.png",
+                  "ItemName": "Apple",
+                  "PickUpSound": "sound/ui/pickup.sound",
+                  "WorldModel": {
+                    "_type": "gameobject",
+                    "prefab": "prefabs/items/apple.prefab"
+                  }
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "37bd7906-6c8a-4e07-989c-beee4ccba0a2",
+                  "Center": "0,0,3.500002",
+                  "IsTrigger": false,
+                  "Scale": "20.29998,30.09998,7.899968",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              ]
+            },
+            {
+              "__guid": "5322b4a7-e797-4e8d-b53d-c17ad1a3b1ef",
+              "Flags": 0,
+              "Name": "Cleaning Supplies",
+              "Position": "118.6308,-207.0112,-4.176926",
+              "Rotation": "0,0,-0.9996213,-0.02751955",
+              "Scale": "0.4256349,0.3963535,5.496929",
+              "Tags": "interact,highlight,item",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "c7072ea0-ada5-4337-81a2-7a8b4dd4c3e1",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/props/trash_pile_c/trash_pile_c_02.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "ItemComponent",
+                  "__guid": "912e35c0-acb2-478d-8362-6c59a5e892f1",
+                  "Attack1Tooltip": "",
+                  "Attack2Tooltip": "Give",
+                  "DestroyOnDrop": true,
+                  "DestroyOnPickup": false,
+                  "DropTooltip": "Drop",
+                  "ImageUrl": "UI/candyicons/bleach.png",
+                  "ItemName": "Bleach",
+                  "PickUpSound": "sound/ui/pickup.sound",
+                  "WorldModel": {
+                    "_type": "gameobject",
+                    "prefab": "prefabs/items/bleach.prefab"
+                  }
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "e22b79b2-6979-4fae-ade9-cace4827c4e8",
+                  "Center": "0,0,0.4000014",
+                  "IsTrigger": false,
+                  "Scale": "40.19998,53.69996,3.39997",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              ]
+            },
+            {
+              "__guid": "586874b5-f74d-4189-9e09-1688e1553526",
+              "Flags": 0,
+              "Name": "Apply Nametag",
+              "Position": "124.8968,-177.4048,36.16859",
+              "Rotation": "0,0,-0.9990777,-0.0429383",
+              "Scale": "0.8092071,0.8159381,0.7427824",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.WorldPanel",
+                  "__guid": "a933b84e-f74c-4377-b989-ad62b1dbcd50",
+                  "HorizontalAlign": "Center",
+                  "InteractionRange": 1000,
+                  "LookAtCamera": true,
+                  "PanelSize": "512,512",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderScale": 1,
+                  "VerticalAlign": "Center"
+                },
+                {
+                  "__type": "Sandbox.FakeNameTag",
+                  "__guid": "2d2788ee-0637-4acd-b9dc-c2481510e705",
+                  "MyStringValue": "Apples"
+                }
+              ]
+            },
+            {
+              "__guid": "df2c94df-a258-490e-921e-ffb5522e435e",
+              "Flags": 0,
+              "Name": "Bleach",
+              "Position": "116.7713,-207.7802,3.057526",
+              "Rotation": "0,0,-0.9990777,-0.0429383",
+              "Scale": "0.8092071,0.8159381,0.7427824",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.WorldPanel",
+                  "__guid": "092966d3-7dc6-44be-9c08-7e946d2dd9e4",
+                  "HorizontalAlign": "Center",
+                  "InteractionRange": 1000,
+                  "LookAtCamera": true,
+                  "PanelSize": "512,512",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderScale": 1,
+                  "VerticalAlign": "Center"
+                },
+                {
+                  "__type": "Sandbox.FakeNameTag",
+                  "__guid": "8bd8fa4e-cffd-4b7c-b66f-9d5e250e9dab",
+                  "MyStringValue": "Cleaning Supplies"
+                }
+              ]
+            },
+            {
+              "__guid": "9f41c5aa-813d-4604-8fd0-9c155b1785e5",
+              "Flags": 0,
+              "Name": "Gummy Worms Box",
+              "Position": "-160.2024,-224.1085,16.32918",
+              "Rotation": "0,0,-0.7933533,0.6087615",
+              "Scale": "1.090931,1.140231,0.7427824",
+              "Tags": "item,highlight,interact",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "a4304aba-64ba-42fc-afdd-f75bbbe6ab66",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_props/small_junk/carton_box.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.85892,0.39535,1,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "1d86060b-f0b0-4547-b519-c5d2c2d5df85",
+                  "Center": "-0.3000001,0,2.899999",
+                  "IsTrigger": false,
+                  "Scale": "16.90001,12.80001,6.799986",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "ItemComponent",
+                  "__guid": "93bab411-dabc-43ba-8f8c-656d5df0398a",
+                  "Attack1Tooltip": "",
+                  "Attack2Tooltip": "Give",
+                  "DestroyOnDrop": true,
+                  "DestroyOnPickup": false,
+                  "DropTooltip": "Drop",
+                  "ImageUrl": "UI/candyicons/gummyworms.png",
+                  "ItemName": "Gummy Worms",
+                  "PickUpSound": "sound/ui/pickup.sound",
+                  "WorldModel": {
+                    "_type": "gameobject",
+                    "prefab": "prefabs/items/gummyworms.prefab"
+                  }
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "12111c20-855a-4d9a-9517-1b9b48a8f958",
+                  "Flags": 0,
+                  "Name": "World",
+                  "Position": "0.0000002185461,-0.00005352879,16.06096",
+                  "Scale": "0.7417583,0.7155902,1",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.WorldPanel",
+                      "__guid": "19a10fe4-47be-4028-9bc0-f6fce2b08707",
+                      "HorizontalAlign": "Center",
+                      "InteractionRange": 1000,
+                      "LookAtCamera": true,
+                      "PanelSize": "512,512",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderScale": 1,
+                      "VerticalAlign": "Center"
+                    },
+                    {
+                      "__type": "Sandbox.FakeNameTag",
+                      "__guid": "de4953ba-668e-4cf1-b9a0-86f815a9143f",
+                      "MyStringValue": "Gummy Worms"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "f031c035-455e-439e-bc99-313de9a0d5b1",
+              "Flags": 0,
+              "Name": "Skittles Box",
+              "Position": "119.5169,-256.1081,24.10878",
+              "Rotation": "0,0,0.9868698,0.1615171",
+              "Scale": "1.090931,1.140231,0.7427824",
+              "Tags": "item,highlight,interact",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "4c5ba524-ed9b-4d54-95b6-40ecf290cde1",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_props/small_junk/carton_box.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,0.39535,0.39535,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "6f0bbccd-fcfe-4a46-b297-51bb63131c89",
+                  "Center": "-0.3000001,0,2.899999",
+                  "IsTrigger": false,
+                  "Scale": "16.90001,12.80001,6.799986",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "ItemComponent",
+                  "__guid": "8afd172d-b178-4620-9d70-b92786f6ad2e",
+                  "Attack1Tooltip": "",
+                  "Attack2Tooltip": "Give",
+                  "DestroyOnDrop": true,
+                  "DestroyOnPickup": false,
+                  "DropTooltip": "Drop",
+                  "ImageUrl": "UI/candyicons/skittles.png",
+                  "ItemName": "Skittles",
+                  "PickUpSound": "sound/ui/pickup.sound",
+                  "WorldModel": {
+                    "_type": "gameobject",
+                    "prefab": "prefabs/items/skittles.prefab"
+                  }
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "eda56d2e-38f2-49b4-bbb3-79295fb67cd5",
+                  "Flags": 0,
+                  "Name": "World",
+                  "Position": "0.0000002185461,-0.00005352879,16.06096",
+                  "Scale": "0.7417583,0.7155902,1",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.WorldPanel",
+                      "__guid": "766ca8b9-1df1-4fcd-9804-eb2bb758461f",
+                      "HorizontalAlign": "Center",
+                      "InteractionRange": 1000,
+                      "LookAtCamera": true,
+                      "PanelSize": "512,512",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderScale": 1,
+                      "VerticalAlign": "Center"
+                    },
+                    {
+                      "__type": "Sandbox.FakeNameTag",
+                      "__guid": "46476db7-d127-4971-abc6-5701f5ab1717",
+                      "MyStringValue": "Skittles"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "2b09153e-2db5-47f2-8c2c-7a3849fe7a30",
+              "Flags": 0,
+              "Name": "Candy Corn Box",
+              "Position": "-185.7128,-196.95,16.22148",
+              "Rotation": "0,0,0.7814912,0.6239161",
+              "Scale": "1.090931,1.140231,0.7427824",
+              "Tags": "item,highlight,interact",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "48ec68fd-394b-4cde-8245-26fd2cf08fec",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_props/small_junk/carton_box.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.87907,0.73147,0.7237,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "7275a2e0-1018-4197-a1fb-1a04b6d178be",
+                  "Center": "-0.3000001,0,2.899999",
+                  "IsTrigger": false,
+                  "Scale": "16.90001,12.80001,6.799986",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "ItemComponent",
+                  "__guid": "68ee0531-4c19-4891-a4e5-3ef512883408",
+                  "Attack1Tooltip": "",
+                  "Attack2Tooltip": "Give",
+                  "DestroyOnDrop": true,
+                  "DestroyOnPickup": false,
+                  "DropTooltip": "Drop",
+                  "ImageUrl": "UI/candyicons/candycorn.png",
+                  "ItemName": "Candy Corn",
+                  "PickUpSound": "sound/ui/pickup.sound",
+                  "WorldModel": {
+                    "_type": "gameobject",
+                    "prefab": "prefabs/items/candycorn.prefab"
+                  }
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "55f7dc1a-6170-4102-ba98-6e7ddd08ba30",
+                  "Flags": 0,
+                  "Name": "World",
+                  "Position": "0.0000002185461,-0.00005352879,16.06096",
+                  "Scale": "0.7417583,0.7155902,1",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.WorldPanel",
+                      "__guid": "41d3e5ab-e090-4441-8a6e-9c92684dfba2",
+                      "HorizontalAlign": "Center",
+                      "InteractionRange": 1000,
+                      "LookAtCamera": true,
+                      "PanelSize": "512,512",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderScale": 1,
+                      "VerticalAlign": "Center"
+                    },
+                    {
+                      "__type": "Sandbox.FakeNameTag",
+                      "__guid": "9801731b-2b4e-4efa-ab4f-c393a080a1ca",
+                      "MyStringValue": "Candy Corn"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "b7c5d2b7-bad1-4d6e-b4ce-25b50dc99d9c",
+              "Flags": 0,
+              "Name": "Licorice Box",
+              "Position": "120.919,-277.9112,24.10876",
+              "Rotation": "0,0,0.9984249,0.05609964",
+              "Scale": "1.090931,1.140231,0.7427824",
+              "Tags": "item,highlight,interact",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "f98c8183-1a33-4ad2-942a-3f9c1fd914b7",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_props/small_junk/carton_box.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.19535,0.1496,0.14719,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "ad721a03-b795-487b-b795-13d94f20d5a4",
+                  "Center": "-0.3000001,0,2.899999",
+                  "IsTrigger": false,
+                  "Scale": "16.90001,12.80001,6.799986",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "ItemComponent",
+                  "__guid": "6bd39a36-0348-4511-9330-747b39c967eb",
+                  "Attack1Tooltip": "",
+                  "Attack2Tooltip": "Give",
+                  "DestroyOnDrop": true,
+                  "DestroyOnPickup": false,
+                  "DropTooltip": "Drop",
+                  "ImageUrl": "UI/candyicons/licorice.png",
+                  "ItemName": "Licorice",
+                  "PickUpSound": "sound/ui/pickup.sound",
+                  "WorldModel": {
+                    "_type": "gameobject",
+                    "prefab": "prefabs/items/licorice.prefab"
+                  }
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "2e5dc7f3-e129-47b6-9318-3140b356c54d",
+                  "Flags": 0,
+                  "Name": "World",
+                  "Position": "0.0000002185461,-0.00005352879,16.06096",
+                  "Scale": "0.7417583,0.7155902,1",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.WorldPanel",
+                      "__guid": "9601d866-30ea-4736-ae96-601a711875af",
+                      "HorizontalAlign": "Center",
+                      "InteractionRange": 1000,
+                      "LookAtCamera": true,
+                      "PanelSize": "512,512",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderScale": 1,
+                      "VerticalAlign": "Center"
+                    },
+                    {
+                      "__type": "Sandbox.FakeNameTag",
+                      "__guid": "e31bdf2e-ac12-41df-a834-c279578edf34",
+                      "MyStringValue": "Licorice"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "15fdf75c-92a0-4622-9d6e-e98c40855c13",
+              "Flags": 0,
+              "Name": "Smarties Box",
+              "Position": "-118.576,-187.5208,16.32918",
+              "Scale": "1.090931,1.140231,0.7427824",
+              "Tags": "item,highlight,interact",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "c9e9d0c0-d246-4e2d-8ffd-28765efcec12",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_props/small_junk/carton_box.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.77209,1,0.95822,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "4a4bde95-4641-4630-9913-07163b49ee68",
+                  "Center": "-0.3000001,0,2.899999",
+                  "IsTrigger": false,
+                  "Scale": "16.90001,12.80001,6.799986",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "ItemComponent",
+                  "__guid": "9b391b27-094b-4e07-b59e-3109f38c4317",
+                  "Attack1Tooltip": "",
+                  "Attack2Tooltip": "Give",
+                  "DestroyOnDrop": true,
+                  "DestroyOnPickup": false,
+                  "DropTooltip": "Drop",
+                  "ImageUrl": "UI/candyicons/smarties.png",
+                  "ItemName": "Smarties",
+                  "PickUpSound": "sound/ui/pickup.sound",
+                  "WorldModel": {
+                    "_type": "gameobject",
+                    "prefab": "prefabs/items/smarties.prefab"
+                  }
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "b6442ef2-6855-469c-acc6-c4c0bdbbaff5",
+                  "Flags": 0,
+                  "Name": "World",
+                  "Position": "0.0000002185461,-0.00005352879,16.06096",
+                  "Scale": "0.7417583,0.7155902,1",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.WorldPanel",
+                      "__guid": "484c9170-3044-4942-b44e-e7ae3ddf00cb",
+                      "HorizontalAlign": "Center",
+                      "InteractionRange": 1000,
+                      "LookAtCamera": true,
+                      "PanelSize": "512,512",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderScale": 1,
+                      "VerticalAlign": "Center"
+                    },
+                    {
+                      "__type": "Sandbox.FakeNameTag",
+                      "__guid": "b1210b21-79e8-4bf5-8a2b-d0466a76ca47",
+                      "MyStringValue": "Smarties"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "711580e6-3e3c-487e-9d85-fec9f84f621d",
+              "Flags": 0,
+              "Name": "Almond Joy Box",
+              "Position": "-115.9067,-220.6902,16.32919",
+              "Rotation": "0,0,0.06662157,0.9977783",
+              "Scale": "1.090931,1.140231,0.7427824",
+              "Tags": "item,highlight,interact",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "45b6ed7c-2a5e-48d6-810e-28383da2d13b",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_props/small_junk/carton_box.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.60465,0.73643,1,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "be3dcf90-8353-410b-a354-45ed3a8e58e0",
+                  "Center": "-0.3000001,0,2.899999",
+                  "IsTrigger": false,
+                  "Scale": "16.90001,12.80001,6.799986",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "ItemComponent",
+                  "__guid": "cd750c35-c426-499f-b23d-5be683c783f6",
+                  "Attack1Tooltip": "",
+                  "Attack2Tooltip": "Give",
+                  "DestroyOnDrop": true,
+                  "DestroyOnPickup": false,
+                  "DropTooltip": "Drop",
+                  "ImageUrl": "UI/candyicons/almondjoy.png",
+                  "ItemName": "Almond Joy",
+                  "PickUpSound": "sound/ui/pickup.sound",
+                  "WorldModel": {
+                    "_type": "gameobject",
+                    "prefab": "prefabs/items/almondjoy.prefab"
+                  }
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "2a500c2d-3a0b-47cd-9367-d2d72c123e2b",
+                  "Flags": 0,
+                  "Name": "World",
+                  "Position": "0.0000002185461,-0.00005352879,16.06096",
+                  "Scale": "0.7417583,0.7155902,1",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.WorldPanel",
+                      "__guid": "230d49e5-9a45-4684-8f65-8d4f206210b6",
+                      "HorizontalAlign": "Center",
+                      "InteractionRange": 1000,
+                      "LookAtCamera": true,
+                      "PanelSize": "512,512",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderScale": 1,
+                      "VerticalAlign": "Center"
+                    },
+                    {
+                      "__type": "Sandbox.FakeNameTag",
+                      "__guid": "ebd03478-0d8d-432f-8201-3b4194711d9b",
+                      "MyStringValue": "Almond Joy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "084a74fc-95d9-4741-93fa-2af8495de236",
+              "Flags": 0,
+              "Name": "Toothbrush Box",
+              "Position": "257.5639,-752.1413,-32.01703",
+              "Enabled": true,
+              "Children": [
+                {
+                  "__guid": "64bff328-9706-44a3-ba3c-33bcbfde8149",
+                  "Flags": 0,
+                  "Name": "Toothbrush Box",
+                  "Position": "134.4991,484.276,63.7746",
+                  "Rotation": "0,0,-0.9987569,-0.04984678",
+                  "Scale": "0.3823389,0.5108721,0.7427824",
+                  "Tags": "item,highlight,interact",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "fb8e1ac1-4e53-447c-8b20-765554edb26e",
+                      "BodyGroups": 18446744073709551615,
+                      "MaterialOverride": "materials/glitchvid/plaster/plaster_white.vmat",
+                      "Model": "models/!dead island 2/cigarettes/cigarettebox.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderType": "On",
+                      "Tint": "0.88837,0.99628,1,1"
+                    },
+                    {
+                      "__type": "Sandbox.BoxCollider",
+                      "__guid": "ac680c93-fa53-40a6-9d4b-35f8c8061c74",
+                      "Center": "-0.3000001,0,2.899999",
+                      "IsTrigger": false,
+                      "Scale": "16.90001,12.80001,6.799986",
+                      "Static": false,
+                      "SurfaceVelocity": "0,0,0"
+                    },
+                    {
+                      "__type": "ItemComponent",
+                      "__guid": "0bf3472c-3be0-4988-8b89-c335706c5037",
+                      "Attack1Tooltip": "",
+                      "Attack2Tooltip": "Give",
+                      "DestroyOnDrop": true,
+                      "DestroyOnPickup": false,
+                      "DropTooltip": "Drop",
+                      "ImageUrl": "UI/candyicons/toothbrush.png",
+                      "ItemName": "Tooth Brush",
+                      "PickUpSound": "sound/ui/pickup.sound",
+                      "WorldModel": {
+                        "_type": "gameobject",
+                        "prefab": "prefabs/items/toothbrush.prefab"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "__guid": "1adcd461-ca22-41c2-9c4e-ae081ac8d7bc",
+                  "Flags": 0,
+                  "Name": "Toothbrush Panel",
+                  "Position": "133.3925,484.276,69.6015",
+                  "Scale": "0.6,0.6,0.6",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.WorldPanel",
+                      "__guid": "f4528d71-174a-478b-a6e9-df6a4ac5b107",
+                      "HorizontalAlign": "Center",
+                      "InteractionRange": 1000,
+                      "LookAtCamera": true,
+                      "PanelSize": "512,512",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderScale": 1,
+                      "VerticalAlign": "Center"
+                    },
+                    {
+                      "__type": "Sandbox.FakeNameTag",
+                      "__guid": "1131e9fd-8765-4c78-9f60-0c54aa9629f6",
+                      "MyStringValue": "Toothbrush"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "361ca92a-4d8d-478f-9b00-ea01eb8f542e",
+              "Flags": 0,
+              "Name": "Snickers Box",
+              "Position": "45.87071,-143.9458,24.19624",
+              "Rotation": "0,0,-0.7933533,0.6087615",
+              "Scale": "1.090931,1.140231,0.7427824",
+              "Tags": "item,highlight,interact",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "fc5ae166-aed0-453c-a366-2433d0b1517f",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_props/small_junk/carton_box.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.91628,0.77742,0.42618,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "0ff92c46-b8a7-47a7-badc-f7bbc201178b",
+                  "Center": "-0.3000001,0,2.899999",
+                  "IsTrigger": false,
+                  "Scale": "16.90001,12.80001,6.799986",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "ItemComponent",
+                  "__guid": "37050122-e226-4d6a-88b7-6528147073aa",
+                  "Attack1Tooltip": "",
+                  "Attack2Tooltip": "Give",
+                  "DestroyOnDrop": true,
+                  "DestroyOnPickup": false,
+                  "DropTooltip": "Drop",
+                  "ImageUrl": "UI/candyicons/snickers.png",
+                  "ItemName": "Snickers",
+                  "PickUpSound": "sound/ui/pickup.sound",
+                  "WorldModel": {
+                    "_type": "gameobject",
+                    "prefab": "prefabs/items/snickers.prefab"
+                  }
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "238de759-8737-4d08-a13f-2026e227e376",
+                  "Flags": 0,
+                  "Name": "World",
+                  "Position": "0.0000002185461,-0.00005352879,16.06096",
+                  "Scale": "0.7417583,0.7155902,1",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.WorldPanel",
+                      "__guid": "70454914-cf13-425b-a7ba-c84ea5fec7df",
+                      "HorizontalAlign": "Center",
+                      "InteractionRange": 1000,
+                      "LookAtCamera": true,
+                      "PanelSize": "512,512",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderScale": 1,
+                      "VerticalAlign": "Center"
+                    },
+                    {
+                      "__type": "Sandbox.FakeNameTag",
+                      "__guid": "d1f9009c-5d85-4aeb-9734-fb74df9ef431",
+                      "MyStringValue": "Snickers"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "dd62d120-91f5-42b4-ad1a-4ed58f29bd12",
+              "Flags": 0,
+              "Name": "Peanut M\u0026M Box",
+              "Position": "72.4669,-141.7928,24.19624",
+              "Rotation": "0,0,-0.7071068,0.7071068",
+              "Scale": "1.090931,1.140231,0.7427824",
+              "Tags": "item,highlight,interact",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "f72ed91a-b6f1-4e5f-be79-11193b6684c7",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/rust_props/small_junk/carton_box.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,0.72853,0.04186,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "794dcc47-f0ad-458e-b8fb-98dfb39a6b10",
+                  "Center": "-0.3000001,0,2.899999",
+                  "IsTrigger": false,
+                  "Scale": "16.90001,12.80001,6.799986",
+                  "Static": false,
+                  "SurfaceVelocity": "0,0,0"
+                },
+                {
+                  "__type": "ItemComponent",
+                  "__guid": "412ee083-1f67-4d70-98b5-af020c11b4a9",
+                  "Attack1Tooltip": "",
+                  "Attack2Tooltip": "Give",
+                  "DestroyOnDrop": true,
+                  "DestroyOnPickup": false,
+                  "DropTooltip": "Drop",
+                  "ImageUrl": "UI/candyicons/peanutmm.png",
+                  "ItemName": "M\u0026Ms",
+                  "PickUpSound": "sound/ui/pickup.sound",
+                  "WorldModel": {
+                    "_type": "gameobject",
+                    "prefab": "prefabs/items/mm.prefab"
+                  }
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "63ab6572-cd14-412d-9050-dc5836037f14",
+                  "Flags": 0,
+                  "Name": "World",
+                  "Position": "0.0000002185461,-0.00005352879,16.06096",
+                  "Scale": "0.7417583,0.7155902,1",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.WorldPanel",
+                      "__guid": "1444a048-7946-4c0f-91ed-0bda99ae7713",
+                      "HorizontalAlign": "Center",
+                      "InteractionRange": 1000,
+                      "LookAtCamera": true,
+                      "PanelSize": "512,512",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
+                      "RenderScale": 1,
+                      "VerticalAlign": "Center"
+                    },
+                    {
+                      "__type": "Sandbox.FakeNameTag",
+                      "__guid": "239f04e0-3b27-410e-9a9c-de612b8bc966",
+                      "MyStringValue": "M\u0026Ms"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "fa8050f7-e2da-49c2-b953-2ed13b5bfe04",
+          "Flags": 0,
+          "Name": "Lightbulbs",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "acedf796-dd9e-48ad-be62-b4bf8c32f378",
+              "Flags": 0,
+              "Name": "Lightbulb (7)",
+              "Position": "94.42932,251.5311,192.4231",
+              "Rotation": "0,-1,0,0.0000001947072",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "20220a5b-60f3-4ada-a38b-4228ec5549b9",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "347564c1-f492-4145-b7ac-93d98756d63d",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light,light_point",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "ae458625-ca74-4a03-b3ba-6eb479200500",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.18605,0.15879,0.13153,1",
+                      "Radius": 175.90012,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "acd2602e-9fe8-43f7-a096-29b4758fd889",
+              "Flags": 0,
+              "Name": "Lightbulb (7)",
+              "Position": "254.4292,342.634,184.5131",
+              "Rotation": "0,-1,0,0.0000001947072",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "4db7d40d-ccaa-4fcd-8f4d-b56581598406",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "b73cce88-f881-43dd-8e8d-732597126a9a",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light,light_point",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "6c1b36e6-2690-49f7-9ac8-529b12f28473",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.36744,0.35559,0.31275,1",
+                      "Radius": 151.9003,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "089ca531-3105-4d97-8d57-aed943c6ed8f",
+              "Flags": 0,
+              "Name": "Lightbulb (2)",
+              "Position": "164.4294,417.5311,192.4231",
+              "Rotation": "0,-1,0,0.0000001947072",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "e8bf5cff-087f-43f9-a194-2e786ed3ae39",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "c0680b4b-bbba-426c-9114-cb05ca66f654",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light_point,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "102bd20e-6e4b-43ac-9823-f74747ec3b15",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.36744,0.36197,0.28541,1",
+                      "Radius": 226.89967,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "fb4bc550-dde6-4e11-976c-e31f2c7a7a75",
+              "Flags": 0,
+              "Name": "Lightbulb",
+              "Position": "120.4292,127.5311,192.4231",
+              "Rotation": "0,-1,0,0.0000001947072",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "4244b564-6e65-452e-aabc-22986b8188da",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "879a4014-400c-4c5e-8254-859f4092462e",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light_point,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "6a6f9f40-82da-4938-8634-1d06cd00791e",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.63922,0.76078,0.78431,1",
+                      "Radius": 165.59999,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "e97dab30-5ba2-4d02-9c54-e54e934dc034",
+              "Flags": 0,
+              "Name": "Lightbulb (7)",
+              "Position": "313.5866,155.5311,192.4231",
+              "Rotation": "0,-1,0,0.0000001947072",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "64ee1302-53b5-40ba-a30d-f65ef1fbae86",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "66d23cde-c7d3-42dc-9039-638da9ed2ead",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light,light_point",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "b425ca0a-0630-41ca-ac77-ee7df3d58f2c",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.18605,0.15879,0.13153,1",
+                      "Radius": 384.6001,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "7b8a2939-63e3-48a5-8963-f6bd5d80f195",
+              "Flags": 0,
+              "Name": "Lightbulb (4)",
+              "Position": "416.4294,439.5311,192.423",
+              "Rotation": "0,-1,0,0.0000001947072",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "032be83f-e949-4067-a799-ec3073ff74c4",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "d30bf2d9-d9e5-40d6-ab52-7ee6feaf144b",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light_point,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "e5b3bf95-799a-4cce-aab4-77ccf124140f",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.30233,0.27842,0.25452,1",
+                      "Radius": 170.89978,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "4265ddcb-d2d7-49a4-9d7b-fd816b80715d",
+              "Flags": 0,
+              "Name": "Lightbulb (4)",
+              "Position": "770.6993,712.4064,9.700645",
+              "Rotation": "-0.0000001376788,-0.7071068,0.7071067,0.0000001376788",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "4a499a9b-c850-4424-af53-78ea0c293e9a",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "d611fb68-c606-4f8a-91b9-20589e24aba5",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0.0002414415,0.00009031333,6.931213",
+                  "Tags": "light_point,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "fe3adaf6-3a1f-4b1b-8885-847065be4250",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.18276,0.21583,0.22326,1",
+                      "Radius": 767.5996,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "db89aa84-900c-443b-b919-49454bfd643d",
+              "Flags": 0,
+              "Name": "Lightbulb (4)",
+              "Position": "424.9597,696.2151,89.50433",
+              "Rotation": "-0.0000001376788,-0.7071068,0.7071067,0.0000001376788",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "e951cb5c-134e-4e36-8398-e6a39b2e56db",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "6f424a1f-dd9f-4730-b4f8-4214cfa2fefe",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0.0002414415,0.00009031333,6.931213",
+                  "Tags": "light_point,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "96591d7e-c19d-4762-bd52-3ec47b16483b",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.18276,0.21583,0.22326,1",
+                      "Radius": 767.5996,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "dd1baa13-c3dc-46f3-bf37-870e0d1c4288",
+              "Flags": 0,
+              "Name": "Lightbulb (4)",
+              "Position": "774.4294,607.5311,192.4229",
+              "Rotation": "0,-1,0,0.0000001947072",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "d1acca4e-5ab8-4ccc-a54e-8fc5047320fe",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "af7277e0-0962-4538-8102-5ea073d36506",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light_point,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "d2093b4b-3c1f-413a-b223-919a55567cd8",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.38474,0.43256,0.30782,1",
+                      "Radius": 170.89978,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "7b04441b-0b78-4aa9-991b-f7a06cc711cb",
+              "Flags": 0,
+              "Name": "Lightbulb (4)",
+              "Position": "774.4294,261.6961,192.4229",
+              "Rotation": "0,-1,0,0.0000001947072",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "2075d6f4-edfe-4a22-a0fb-8464e19c5d78",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "05ed0f97-c595-4198-8903-211f6d7989ba",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light_point,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "c5b1a827-4531-4e83-a95e-cca46d9c74b4",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.27766,0.38162,0.39535,1",
+                      "Radius": 213.69977,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "7a025324-7e92-4f43-8fad-54e68cef365a",
+              "Flags": 0,
+              "Name": "Lightbulb (4)",
+              "Position": "520.7332,255.5311,192.423",
+              "Rotation": "0,-1,0,0.0000001947072",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "3390db2f-e5d9-492d-b72f-6dc5a0468f03",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "4396f677-d646-4f5b-8f85-6043e959ea2a",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light_point,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "d10bb782-fc3e-4b2d-a23e-04845a8b596f",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.32093,0.2611,0.2239,1",
+                      "Radius": 213.69977,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "11959ed3-fc80-4ae6-b6fe-b0ec1e3f806a",
+              "Flags": 0,
+              "Name": "Lightbulb (5)",
+              "Position": "685.5659,439.5311,192.4229",
+              "Rotation": "0,-1,0,0.0000001947072",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "da08f34f-00c4-47fc-bb10-7aa2ae71d42f",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "bdc66f58-26c3-465c-bf1f-01481d1c99b9",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light_point,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "5ec8cc57-0079-42f0-8eee-b1697766db12",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.37674,0.34958,0.32242,1",
+                      "Radius": 294.49985,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "90256d2f-afcb-490b-9b73-5dd7202c5b88",
+              "Flags": 0,
+              "Name": "Lightbulb (6)",
+              "Position": "572.4294,619.5311,192.423",
+              "Rotation": "0,-1,0,0.0000001947072",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "0122e80e-b3ad-47b2-bf40-8f2feb99bbb9",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "8e5e4476-a845-4ce5-83f0-cb55056f79b7",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light_point,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "52504948-a0ed-45cd-80bb-73f742f176a1",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.44262,0.50933,0.51163,1",
+                      "Radius": 145.19981,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "5f065410-82d0-4e37-8573-f946521c7135",
+              "Flags": 0,
+              "Name": "Lightbulb (3)",
+              "Position": "164.4294,607.105,192.4231",
+              "Rotation": "0,-1,0,0.0000001947072",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "fa18c277-a6dd-490d-9026-8bdaf1f3098a",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "3686cab5-1f83-491b-b7ba-92df6b1f78fe",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light_point,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "5d308bf8-7d2e-4d8d-8bed-4338faa6a5ec",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.29205,0.29302,0.23442,1",
+                      "Radius": 356.59998,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "35a716ea-86f5-4252-9f29-60ca51e48df2",
+              "Flags": 0,
+              "Name": "Lightbulb (1)",
+              "Position": "354.4292,89.53108,186.4231",
+              "Rotation": "0,-0.7071067,0,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "50ff27d7-d1d4-4471-a287-a5f6b936a219",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/newcliffy/lightbulb.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "5da71336-c31d-424a-8df6-001cef5f1001",
+                  "Flags": 0,
+                  "Name": "Point Light",
+                  "Position": "0,0,4.757614",
+                  "Tags": "light_point,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.PointLight",
+                      "__guid": "2d780855-7d25-4fdd-bcba-98091f6fd507",
+                      "Attenuation": 1,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "0.63965,0.76013,0.7814,1",
+                      "Radius": 165.59999,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "f5fd14ed-0118-485e-a214-551ed4e9ee58",
+          "Flags": 0,
+          "Name": "Candles",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "b7046562-a81f-475d-97b9-74cb0896ca20",
+              "Flags": 0,
+              "Name": "Point Light",
+              "Position": "413.2214,250.8793,111.7891",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.PointLight",
+                  "__guid": "08909de9-15f2-4385-b0c9-2d8b86ff5d90",
+                  "Attenuation": 10,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "0.25116,0.13154,0.02687,1",
+                  "Radius": 46.299984,
+                  "Shadows": true
+                }
+              ]
+            },
+            {
+              "__guid": "b45d3c84-fcfe-42b2-9a47-8effbe591f16",
+              "Flags": 0,
+              "Name": "Point Light",
+              "Position": "696.4183,644.1147,115.2483",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.PointLight",
+                  "__guid": "1f10932a-bc2e-41fb-a1a1-59aea239e2cb",
+                  "Attenuation": 10,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "0.72093,0.36862,0.06036,1",
+                  "Radius": 46.299984,
+                  "Shadows": true
+                }
+              ]
+            },
+            {
+              "__guid": "8c7a08cc-fd6b-481f-98ba-8d675dc3e1c4",
+              "Flags": 0,
+              "Name": "Point Light",
+              "Position": "355.1302,334.0323,105.6081",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.PointLight",
+                  "__guid": "4cfb3153-16eb-4d10-b617-a52a9153318c",
+                  "Attenuation": 10,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "0.72093,0.36862,0.06036,1",
+                  "Radius": 46.299984,
+                  "Shadows": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "55d0e6f8-d7c6-4255-8754-4cdd350b6af0",
+          "Flags": 0,
+          "Name": "Sun",
+          "Position": "126.4292,187.5311,300.4231",
+          "Rotation": "0.1883843,0.5840383,-0.7562002,0.2270945",
+          "Tags": "light_directional,light,skybox",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.DirectionalLight",
+              "__guid": "4bd679f9-a9f1-4750-8da6-d99df9cabce6",
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.08325,0.11214,0.12093,1",
+              "Shadows": true,
+              "SkyColor": "0,0,0,0"
+            }
+          ]
+        },
+        {
+          "__guid": "5ef5f242-01af-46db-95ee-ae3dc82181ce",
+          "Flags": 0,
+          "Name": "Skybox",
+          "Tags": "skybox",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkyBox2D",
+              "__guid": "7f6cf8e1-4779-428c-882d-8511c65384db",
+              "SkyIndirectLighting": true,
+              "SkyMaterial": "villagehouse_sky2.vmat",
+              "Tint": "0.02791,0.02791,0.02791,1"
+            }
+          ]
+        },
+        {
+          "__guid": "2079eda7-2dec-4c28-ac19-5329bc9c0b01",
+          "Flags": 0,
+          "Name": "Cube (5)",
+          "Position": "236.2091,122.3159,90.09",
+          "Rotation": "0.6702058,0.04797847,-0.7387326,0.05288413",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "b74e46f5-6f0c-4f7a-a166-b42b5fd1a219",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/trim_sheet/pallet_a1.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "57b3852b-283b-4e72-8142-8f337ef9e1f3",
+          "Flags": 0,
+          "Name": "Cube (4)",
+          "Position": "228.5901,117.6192,127.1151",
+          "Rotation": "0,0,-0.731514,0.6818268",
+          "Scale": "1,1,1.382395",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "acbaca03-d109-441c-8beb-05c2aeb848f3",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/trash/trashbag_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "976cb191-fdf4-42a4-ab16-7cb3a2ed64a3",
+          "Flags": 0,
+          "Name": "Cube (3)",
+          "Position": "217.5619,111.1199,120.4083",
+          "Rotation": "0,0,-0.731514,0.6818268",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "0264c56e-2ccd-478c-9964-2e77f4ff49f0",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/trash/trashbag_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "75c6a379-6bbd-4599-ae05-fa8f3244721e",
+          "Flags": 0,
+          "Name": "Cube (2)",
+          "Position": "227.4575,125.1174,120.4083",
+          "Rotation": "0,0,0.3499876,0.9367546",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "19a83963-1677-449b-bdfe-2c02a07e9a6d",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/trash/trashbag_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "c18ddbac-cc9b-4d42-9fa1-5188f3d91509",
+          "Flags": 0,
+          "Name": "Cube (1)",
+          "Position": "231.6714,114.6473,120.4083",
+          "Rotation": "0,0,0.8479238,0.5301184",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "58fae868-730a-41dd-9808-6357e4c06818",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/trash/trashbag_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "01be0b8e-cf54-44ff-ab9c-93b2bcbf4e99",
+          "Flags": 0,
+          "Name": "Cube (6)",
+          "Position": "224.5467,101.7876,112.7088",
+          "Rotation": "0,0,0.8479238,0.5301184",
+          "Scale": "1.585879,0.5849619,1.38099",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "cffdb17a-bc39-4705-a9fe-381b6fbace58",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/tarp/tarp_c.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "8ac917f4-1d00-4d7c-97d1-ae4bfaf1993c",
+          "Flags": 0,
+          "Name": "Cube",
+          "Position": "218.1509,94.437,159.4735",
+          "Rotation": "0,0,0.8479238,0.5301184",
+          "Scale": "1.585879,0.5849619,1.38099",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ef05e633-510a-4826-9c51-371c631cad7f",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/props/tarp/tarp_c.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "35e009e8-0198-4eff-840e-765fb564298e",
+      "Flags": 0,
+      "Name": "Radio",
+      "Position": "-108.5418,212.1627,219.2367",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Tags": "highlight,interact",
+      "Enabled": true,
+      "NetworkMode": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "c33c1e78-c9bb-404a-af37-e54f4a73833a",
+          "IsTrigger": false,
+          "Model": "content/models/radio/radio.vmdl",
+          "Static": false,
+          "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "496445bc-6ee8-4526-aada-9d4d88def66b",
+          "BodyGroups": 18446744073709551615,
+          "CreateBoneObjects": false,
+          "Model": "content/models/radio/radio.vmdl",
+          "Morphs": {},
+          "Parameters": {
+            "bools": {},
+            "ints": {},
+            "floats": {},
+            "vectors": {},
+            "rotations": {}
+          },
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.SoundPointComponent",
+          "__guid": "27066604-96e3-4e0a-89a7-0812b162d57a",
+          "DistanceAttenuation": false,
+          "DistanceAttenuationOverride": false,
+          "Force2d": false,
+          "MaxRepeatTime": 1,
+          "MinRepeatTime": 1,
+          "Occlusion": false,
+          "OcclusionOverride": false,
+          "OcclusionRadius": 32,
+          "Pitch": 1,
+          "PlayOnStart": false,
+          "ReflectionOverride": false,
+          "Reflections": false,
+          "Repeat": true,
+          "SoundOverride": true,
+          "StopOnNew": false,
+          "TargetMixer": {
+            "Name": "unknown",
+            "Id": "00000000-0000-0000-0000-000000000000"
+          },
+          "Volume": 0.2
+        },
+        {
+          "__type": "Radio",
+          "__guid": "5887c42e-a403-4411-a77a-eb38684dd675",
+          "radioSwitch": "sounds/kenney/ui/ui.button.press.sound",
+          "soundPointComponent": {
+            "_type": "component",
+            "component_id": "27066604-96e3-4e0a-89a7-0812b162d57a",
+            "go": "35e009e8-0198-4eff-840e-765fb564298e",
+            "component_type": "SoundPointComponent"
+          },
+          "track": "sound/scapescared.sound"
+        }
+      ]
+    },
+    {
+      "__guid": "723a58f2-3e19-41af-a5c4-5da5f7173442",
+      "Flags": 0,
+      "Name": "Points Monitor",
+      "Position": "288.3902,203.9103,221.4793",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "f71fdbe9-dea8-4d19-b2e1-546ae1b2a6d8",
+          "BodyGroups": 18446744073709551615,
+          "CreateBoneObjects": false,
+          "Model": "models/sciscreen.vmdl",
+          "Morphs": {},
+          "Parameters": {
+            "bools": {},
+            "ints": {},
+            "floats": {},
+            "vectors": {},
+            "rotations": {}
+          },
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "2e74991e-9c8e-4e8e-b323-3161cc1d0890",
+          "IsTrigger": false,
+          "Model": "models/sciscreen.vmdl",
+          "Static": false,
+          "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "Pmsound",
+          "__guid": "327e6a25-d812-4541-92c0-535a989a3770",
+          "BadSound": "sound/ui/pointsmonitor/error_007.ogg.sound",
+          "GoodSound": "sound/ui/pointsmonitor/question_002.ogg.sound",
+          "GreatSound": "sound/ui/pointsmonitor/confirmation_002.ogg.sound"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "741a5878-1d35-4612-b20a-0d808d8c0d16",
+          "Flags": 0,
+          "Name": "Point Light",
+          "Position": "2.344956,-6.57907,12.41176",
+          "Tags": "light,light_point",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.PointLight",
+              "__guid": "e8936878-70ce-42de-81ff-0e90baa8393e",
+              "Attenuation": 1,
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.18431,0.4902,0.28627,1",
+              "Radius": 30,
+              "Shadows": true
+            }
+          ]
+        },
+        {
+          "__guid": "515da522-90a3-4d5f-9a0c-51b483edff54",
+          "Flags": 0,
+          "Name": "Point Light",
+          "Position": "2.344939,7.503113,12.41176",
+          "Tags": "light,light_point",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.PointLight",
+              "__guid": "2dbc4fc6-1f97-4d78-a043-8f4f2a993555",
+              "Attenuation": 1,
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.37255,0.12157,0.12157,1",
+              "Radius": 30,
+              "Shadows": true
+            }
+          ]
+        },
+        {
+          "__guid": "2f0b04c0-03e4-4339-be1c-e95f8de5b74f",
+          "Flags": 0,
+          "Name": "World",
+          "Position": "1.097809,-0.03068523,10.87244",
+          "Rotation": "-0.0000001192093,0.381888,-0.0000002682209,-0.9242084",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.WorldPanel",
+              "__guid": "c8b82080-9a83-4df4-9d01-79d9f8ed9b7b",
+              "HorizontalAlign": "Center",
+              "InteractionRange": 1000,
+              "LookAtCamera": false,
+              "PanelSize": "512,256",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderScale": 1,
+              "VerticalAlign": "Center"
+            },
+            {
+              "__type": "Sandbox.PointsPanel",
+              "__guid": "fd69fac7-5099-49f7-891b-29f656c89757",
+              "sm": {
+                "_type": "component",
+                "component_id": "c36a095b-245a-48be-a14c-5e4247975b22",
+                "go": "b65b39f0-69e8-4f56-932a-72bc60ebcea3",
+                "component_type": "ScareMaster"
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "4b43ea52-2952-40b5-9cc3-d5438551d193",
+          "Flags": 0,
+          "Name": "computerhum",
+          "Position": "0.2873077,0.2078858,12.0643",
+          "Rotation": "-0.00000002980232,0.379976,0,0.9249963",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SoundPointComponent",
+              "__guid": "f906a63b-68f9-47ca-89d6-9cd77ab22bd6",
+              "DistanceAttenuation": false,
+              "DistanceAttenuationOverride": false,
+              "Force2d": false,
+              "MaxRepeatTime": 1,
+              "MinRepeatTime": 1,
+              "Occlusion": false,
+              "OcclusionOverride": false,
+              "OcclusionRadius": 32,
+              "Pitch": 1,
+              "PlayOnStart": true,
+              "ReflectionOverride": false,
+              "Reflections": false,
+              "Repeat": true,
+              "SoundEvent": "sound/world/computerhum.sound",
+              "SoundOverride": false,
+              "StopOnNew": false,
+              "TargetMixer": {
+                "Name": "unknown",
+                "Id": "00000000-0000-0000-0000-000000000000"
+              },
+              "Volume": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "7643fa1d-655f-41a1-a77f-c75a0cbf932c",
+      "Flags": 0,
+      "Name": "TreaterSpawnPosition",
+      "Position": "184.0525,-126.4757,207.7538",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Tags": "leavepoint",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "0e6af267-266f-4b33-b2df-d65662be8d2a",
+          "AngularDamping": 0,
+          "Gravity": false,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": true,
+            "Y": true,
+            "Z": true,
+            "Pitch": true,
+            "Yaw": true,
+            "Roll": true
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "4a075d5d-0864-432f-8d5b-9eb8aeba2d06",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "32,32,32",
+          "Static": false,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "8ce9c822-d41c-489a-9ea3-8d050f2896ef",
+      "Flags": 0,
+      "Name": "Spawnpoints",
+      "Position": "56.8929,169.1445,186.9152",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "8e0dcb10-c09e-4193-90da-c50dc240eeff",
+          "Flags": 0,
+          "Name": "Point",
+          "Enabled": true
+        },
+        {
+          "__guid": "5274478d-7c91-4b1d-8d78-7fe914ea6ea5",
+          "Flags": 0,
+          "Name": "Point",
+          "Position": "52.27281,60.4221,0",
+          "Enabled": true
+        },
+        {
+          "__guid": "ad5b7d22-cce9-446a-b0f1-f4fa534d8de3",
+          "Flags": 0,
+          "Name": "Point",
+          "Position": "-27.68787,64.32248,0",
+          "Enabled": true
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
+    "ThreadedAnimation": true,
+    "TimeScale": 0.95,
+    "UseFixedUpdate": true,
+    "Metadata": {},
+    "NavMesh": {
+      "Enabled": true,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 1.0000017,
+      "AgentStepSize": 16.700005,
+      "AgentMaxSlope": 0,
+      "ExcludedBodies": "door,ignore",
+      "IncludedBodies": ""
+    }
+  },
+  "ResourceVersion": 2,
+  "Title": null,
+  "Description": null,
+  "__references": [
+    "caro.cigarettebox#29427",
+    "evilinc.radio#48192",
+    "fennec.night_sky_1#24390",
+    "fpopium.door_metal#48517",
+    "fpopium.door_wood#48520",
+    "fpopium.pallet_a1#54954",
+    "fpopium.tarp_c#54907",
+    "fpopium.trashbag_b#54893",
+    "gkaf.outlet_switch#53535",
+    "pilgrim.scifipc#10362",
+    "titanovsky.grilled_steak#11839",
+    "tones.lightbulb#36851",
+    "tridge.plaster_white#31727"
+  ],
+  "__version": 2
+}
